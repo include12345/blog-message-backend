@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/blog-api/blog-api.iml" filepath="$PROJECT_DIR$/blog-api/blog-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blog-message-backend.iml" filepath="$PROJECT_DIR$/blog-message-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blog-war/blog-war.iml" filepath="$PROJECT_DIR$/blog-war/blog-war.iml" />
+    </modules>
+  </component>
+</project>
