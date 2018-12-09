@@ -21,10 +21,12 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
     private final Logger log = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private CacheDao cacheDao;
+    private UserDao userDao;
 
     @Autowired
-    private UserDao userDao;
+    private CacheDao cacheDao;
+
+
 
 
 
