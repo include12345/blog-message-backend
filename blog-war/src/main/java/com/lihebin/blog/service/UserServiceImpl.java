@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
             return StringUtil.hashMap(Result.CODE, Result.FAIL_CODE, Result.MESSAGE, "用户名或密码为空");
         }
         User user = userDao.queryUserByUsername(username);
-        if (!user.getPassword().equalsIgnoreCase(password)) {
+        if (!password.equalsIgnoreCase(user.getPassword())) {
             return StringUtil.hashMap(Result.CODE, Result.FAIL_CODE, Result.MESSAGE, "密码错误");
         }
         String uuid = UUID.randomUUID().toString();
