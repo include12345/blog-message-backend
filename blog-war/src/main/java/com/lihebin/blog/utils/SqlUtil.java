@@ -17,7 +17,7 @@ public class SqlUtil {
 
     /**
      * sql拼接
-     * @param params
+     * @param
      * @return
      */
 //    public static List<Map<String, Object>> appendCriteriaParams(JdbcTemplate jdbcTemplate, String tableName, Map<String,Object> params, List<String> paramsKeys) {
@@ -34,6 +34,15 @@ public class SqlUtil {
 //        return jdbcTemplate.queryForList(sql, parameterSource);
 //    }
 
+
+    public static String sqlFormat(String sql, String key) {
+        return String.format("%s, %s =: %s", sql, key, key);
+    }
+
+
+    public static String sqlAndFormat(String sql, String key) {
+        return String.format("%s and %s =: %s", sql, key, key);
+    }
 
     /**
      * sql拼接

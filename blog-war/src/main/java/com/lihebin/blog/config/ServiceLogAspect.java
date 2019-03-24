@@ -23,7 +23,7 @@ public class ServiceLogAspect {
 
 
   //申明一个切点 里面是 execution表达式
-  @Pointcut("execution(public * com.lihebin.blog.service.serviceImpl.*.*(..))")
+  @Pointcut("execution(public * com.lihebin.blog.service.*.*(..))")
     private void serviceAspect(){
 
   }
