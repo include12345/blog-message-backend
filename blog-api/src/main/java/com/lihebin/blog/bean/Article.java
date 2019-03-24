@@ -15,10 +15,29 @@ public class Article extends Base {
 
     private Integer updateAuthorId;
 
+    private Integer create_author_id;
+
+    private Integer update_author_id;
+
     private String createAuthor;
 
     private String updateAuthor;
 
+    public Integer getCreate_author_id() {
+        return create_author_id;
+    }
+
+    public void setCreate_author_id(Integer create_author_id) {
+        this.create_author_id = create_author_id;
+    }
+
+    public Integer getUpdate_author_id() {
+        return update_author_id;
+    }
+
+    public void setUpdate_author_id(Integer update_author_id) {
+        this.update_author_id = update_author_id;
+    }
 
     public String getTitle() {
         return title;

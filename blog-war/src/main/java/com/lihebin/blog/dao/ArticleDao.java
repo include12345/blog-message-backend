@@ -6,7 +6,9 @@ import com.lihebin.blog.bean.PageInfo;
 import com.lihebin.blog.utils.SqlUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -63,17 +65,17 @@ public class ArticleDao {
             countSql = SqlUtil.sqlAndFormat(countSql, TITLE);
             mapSqlParameterSource.addValue(TITLE, article.getTitle());
         }
-        if (article.getClassify() != 0) {
+        if (null != article.getClassify()) {
             sql = SqlUtil.sqlAndFormat(sql, CLASSIFY);
             countSql = SqlUtil.sqlAndFormat(countSql, CLASSIFY);
             mapSqlParameterSource.addValue(CLASSIFY, article.getClassify());
         }
-        if (article.getCreateAuthorId() != 0) {
+        if (null != article.getCreateAuthorId()) {
             sql = SqlUtil.sqlAndFormat(sql, CREATE_AUTHOR_ID);
             countSql = SqlUtil.sqlAndFormat(countSql, CREATE_AUTHOR_ID);
             mapSqlParameterSource.addValue(CREATE_AUTHOR_ID, article.getCreateAuthorId());
         }
-        if (article.getUpdateAuthorId() != 0) {
+        if (null != article.getUpdateAuthorId()) {
             sql = SqlUtil.sqlAndFormat(sql, UPDATE_AUTHOR_ID);
             countSql = SqlUtil.sqlAndFormat(countSql, UPDATE_AUTHOR_ID);
             mapSqlParameterSource.addValue(UPDATE_AUTHOR_ID, article.getUpdateAuthorId());
@@ -89,7 +91,8 @@ public class ArticleDao {
         }
         sql = SqlUtil.appendPageInfoCtimeDesc(sql, pageInfo);
         try {
-            List<Article> articlesList = namedParameterJdbcTemplate.queryForList(sql, mapSqlParameterSource, Article.class);
+            RowMapper<Article> rowMapper = new BeanPropertyRowMapper<>(Article.class);
+            List<Article> articlesList = namedParameterJdbcTemplate.query(sql, mapSqlParameterSource, rowMapper);
             articles.setArticleList(articlesList);
         } catch (Exception e) {
             log.error("listArticle list: {},{}", article, pageInfo, e);
@@ -106,12 +109,13 @@ public class ArticleDao {
      * @return
      */
     public Article getArticle(String id){
-        String sql = "select * from article where id =: id";
+        String sql = "select * from article where id =:id";
         namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);
         MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();
         mapSqlParameterSource.addValue(ID, id);
         try {
-            return namedParameterJdbcTemplate.queryForObject(sql, mapSqlParameterSource, Article.class);
+            RowMapper<Article> rowMapper = new BeanPropertyRowMapper<>(Article.class);
+            return namedParameterJdbcTemplate.queryForObject(sql, mapSqlParameterSource, rowMapper);
         } catch (Exception e) {
             log.error("getArticle: {}, {}", id, e);
             return new Article();
@@ -145,7 +149,7 @@ public class ArticleDao {
      */
     public Article createArticle(Article article){
         String sql = "insert into article(id, title, classify, content, create_author_id, update_author_id, ctime, mtime, version) " +
-                "value(:title, :classify, :content, :create_author_id, :update_author_id, :ctime, :mtime, 1)";
+                "value(:id, :title, :classify, :content, :create_author_id, :update_author_id, :ctime, :mtime, 1)";
 
 
         namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);

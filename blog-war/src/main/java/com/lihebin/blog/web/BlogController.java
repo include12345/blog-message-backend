@@ -19,26 +19,26 @@ public class BlogController {
         return blogService.getBlog(id);
     }
 
-    @RequestMapping(value = "/blog/listBlog", method = RequestMethod.GET)
+    @RequestMapping(value = "/blog/listBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     public Articles listBlog(@RequestBody Articles articles) {
         return blogService.listBlog(articles);
     }
 
-    @RequestMapping(value = "/api/blog/updateBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/blog/updateBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Article updateBlog(@RequestBody Article article) {
         return blogService.updateBlog(article);
     }
 
 
-    @RequestMapping(value = "/api/blog/updateBlog",  method = RequestMethod.GET)
+    @RequestMapping(value = "/blog/deleteBlog",  method = RequestMethod.GET)
     @ResponseBody
     public void deleteBlog(@RequestParam(value = "id", required = true) String id) {
         blogService.deleteBlog(id);
     }
 
 
-    @RequestMapping(value = "/api/blog/createBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/blog/createBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Article createBlog(@RequestBody Article article) {
         return blogService.createBlog(article);
