@@ -36,12 +36,12 @@ public class SqlUtil {
 
 
     public static String sqlFormat(String sql, String key) {
-        return String.format("%s, %s =: %s", sql, key, key);
+        return String.format("%s, %s =:%s", sql, key, key);
     }
 
 
     public static String sqlAndFormat(String sql, String key) {
-        return String.format("%s and %s =: %s", sql, key, key);
+        return String.format("%s and %s =:%s", sql, key, key);
     }
 
     /**

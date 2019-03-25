@@ -4,8 +4,14 @@ import com.lihebin.blog.bean.Article;
 import com.lihebin.blog.bean.Articles;
 import com.lihebin.blog.bean.PageInfo;
 import com.lihebin.blog.dao.ArticleDao;
+import com.lihebin.blog.dao.ClassifyDao;
+import com.lihebin.blog.dao.UserDao;
+import com.lihebin.blog.utils.DateTimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by lihebin on 2019/3/24.
@@ -16,34 +22,76 @@ public class BlogServiceImpl implements BlogService{
     @Autowired
     private ArticleDao articleDao;
 
+    @Autowired
+    private ClassifyDao classifyDao;
+
+    @Autowired
+    private UserDao userDao;
+
     @Override
     public Article getBlog(String id) {
-        return articleDao.getArticle(id);
+        return articleResponse(articleDao.getArticle(id));
     }
 
     @Override
     public Articles listBlog(Articles articles) {
         PageInfo pageInfo = new PageInfo(articles.getPage(), articles.getPageSize(), articles.getDateStart(), articles.getDateEnd(), articles.getOrderBy());
         Article article = new Article();
-        return articleDao.listArticle(article, pageInfo);
+        Articles articlesOut = articleDao.listArticle(article, pageInfo);
+        List<Article> articleList = new ArrayList<>();
+        articlesOut.getArticleList().forEach(articleOut -> {
+            articleList.add(articleResponse(articleOut));
+        });
+        articlesOut.setArticleList(articleList);
+        return articlesOut;
     }
 
     @Override
     public Article updateBlog(Article article) {
+        if (null != article.getClassifyName()) {
+            int classifySn = classifyDao.getClassifyByName(article.getClassifyName());
+            article.setClassify(classifySn);
+        }
         if(!articleDao.updateArticle(article)) {
             return new Article();
         }
-        return articleDao.getArticle(article.getId());
+        return articleResponse(articleDao.getArticle(article.getId()));
 
     }
 
     @Override
     public Article createBlog(Article article) {
-        return articleDao.createArticle(article);
+        if (null != article.getClassifyName()) {
+            int classifySn = classifyDao.getClassifyByName(article.getClassifyName());
+            article.setClassify(classifySn);
+        }
+        return articleResponse(articleDao.createArticle(article));
     }
 
     @Override
     public void deleteBlog(String id) {
         articleDao.deleteArticle(id);
+    }
+
+    @Override
+    public List<String> getClassify() {
+        return classifyDao.listClassify();
+    }
+
+
+    private Article articleResponse(Article article) {
+        if (article == null) {
+            return new Article();
+        }
+        Article articleOut = new Article();
+        articleOut.setId(article.getId());
+        articleOut.setTitle(article.getTitle());
+        articleOut.setClassifyName(classifyDao.getClassifyBySn(article.getClassify()));
+        articleOut.setContent(article.getContent());
+        articleOut.setCreateAuthor(userDao.queryUserByUsername(article.getCreate_author_id()).getName());
+        articleOut.setUpdateAuthor(userDao.queryUserByUsername(article.getUpdate_author_id()).getName());
+        articleOut.setTimeStart(DateTimeUtil.dateFormat(article.getCtime()));
+        articleOut.setTimeEnd(DateTimeUtil.dateFormat(article.getMtime()));
+        return articleOut;
     }
 }

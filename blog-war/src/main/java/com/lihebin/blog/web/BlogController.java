@@ -5,6 +5,8 @@ import com.lihebin.blog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * Created by lihebin on 2019/03/24.
  */
@@ -35,6 +37,13 @@ public class BlogController {
     @ResponseBody
     public void deleteBlog(@RequestParam(value = "id", required = true) String id) {
         blogService.deleteBlog(id);
+    }
+
+
+    @RequestMapping(value = "/blog/getClassify",  method = RequestMethod.GET)
+    @ResponseBody
+    public List<String> getClassify() {
+        return blogService.getClassify();
     }
 
 

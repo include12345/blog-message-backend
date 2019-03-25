@@ -34,6 +34,16 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
+    public User getUserNameByName(String name) {
+        try {
+            String sql = "select * from user where name= ? and deleted = 0";
+            return backendUserTemplate.queryForObject(sql, new String[]{name}, User.class);
+        } catch (Exception e) {
+            return new User();
+        }
+    }
+
+    @Override
     public List<UserMenu> listUserMenu(String username) {
         try {
             String sql = "select * from user_menu where username= ?";

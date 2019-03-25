@@ -27,7 +27,7 @@ public class ArticleDao {
 
 
     @Resource(name = "blogJdbcTemplate")
-    JdbcTemplate blogUserTemplate;
+    JdbcTemplate blogTemplate;
 
     private static final String ID = "id";
     private static final String TITLE = "title";
@@ -51,7 +51,7 @@ public class ArticleDao {
     public Articles listArticle(Article article, PageInfo pageInfo){
         String countSql = "select count(1) from article where deleted = 0";
         String sql = "select * from article where deleted = 0";
-        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);
+        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogTemplate);
         MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();
 
         if (null != article.getId()) {
@@ -110,7 +110,7 @@ public class ArticleDao {
      */
     public Article getArticle(String id){
         String sql = "select * from article where id =:id";
-        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);
+        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogTemplate);
         MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();
         mapSqlParameterSource.addValue(ID, id);
         try {
@@ -129,8 +129,8 @@ public class ArticleDao {
      * @return
      */
     public boolean deleteArticle(String id){
-        String sql = "update article set deleted = 1 where  id =: id";
-        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);
+        String sql = "update article set deleted = 1 where  id = :id";
+        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogTemplate);
         MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();
         mapSqlParameterSource.addValue(ID, id);
         try {
@@ -152,7 +152,7 @@ public class ArticleDao {
                 "value(:id, :title, :classify, :content, :create_author_id, :update_author_id, :ctime, :mtime, 1)";
 
 
-        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);
+        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogTemplate);
         MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();
         String id = UUID.randomUUID().toString();
         mapSqlParameterSource.addValue(ID, id);
@@ -197,7 +197,7 @@ public class ArticleDao {
             mapSqlParameterSource.addValue(TITLE, article.getTitle());
             num ++;
         }
-        if (article.getClassify() != 0) {
+        if (null != article.getClassify()) {
             sql = SqlUtil.sqlFormat(sql, CLASSIFY);
             mapSqlParameterSource.addValue(CLASSIFY, article.getClassify());
             num ++;
@@ -207,7 +207,7 @@ public class ArticleDao {
             mapSqlParameterSource.addValue(CONTENT, article.getContent());
             num ++;
         }
-        if (article.getUpdateAuthorId() != 0) {
+        if (null != article.getUpdateAuthorId()) {
             sql = SqlUtil.sqlFormat(sql, UPDATE_AUTHOR_ID);
             mapSqlParameterSource.addValue(UPDATE_AUTHOR_ID, article.getUpdateAuthorId());
             num ++;
@@ -216,9 +216,9 @@ public class ArticleDao {
             log.info("updateArticle: {}, {}", article, "no update");
             return false;
         }
-        sql = String.format("%s where %s =: %s", sql, ID, ID);
+        sql = String.format("%s where %s = :%s", sql, ID, ID);
         mapSqlParameterSource.addValue(ID, article.getId());
-        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogUserTemplate);
+        namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogTemplate);
         try {
             namedParameterJdbcTemplate.update(sql, mapSqlParameterSource);
             return true;

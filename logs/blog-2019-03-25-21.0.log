@@ -1,0 +1,714 @@
+21:14:45.973 [main] INFO  com.lihebin.blog.Application - Starting Application on 192.168.1.2 with PID 90538 (/Users/lihebin/github/blog-message-backend/blog-war/target/classes started by lihebin in /Users/lihebin/github/blog-message-backend)
+21:14:45.990 [main] INFO  com.lihebin.blog.Application - The following profiles are active: test
+21:14:46.049 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:14:46 CST 2019]; root of context hierarchy
+21:14:46.596 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/Users/lihebin/github/blog-message-backend/blog-war/target/classes/spring/interceptor-config.xml]
+21:14:46.933 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:14:47.302 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7196a864] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:48.189 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+21:14:48.200 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:14:48.201 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+21:14:48.295 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:14:48.295 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2246 ms
+21:14:48.505 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:14:48.505 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+21:14:48.506 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21:14:49.396 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getBlog],methods=[GET]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.getBlog(java.lang.String)
+21:14:49.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/listBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Articles com.lihebin.blog.web.BlogController.listBlog(com.lihebin.blog.bean.Articles)
+21:14:49.398 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/updateBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.updateBlog(com.lihebin.blog.bean.Article)
+21:14:49.398 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/createBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.createBlog(com.lihebin.blog.bean.Article)
+21:14:49.398 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/deleteBlog],methods=[GET]}" onto public void com.lihebin.blog.web.BlogController.deleteBlog(java.lang.String)
+21:14:49.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/relevanceUserAndMenu],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.relevanceUserAndMenu(java.util.Map)
+21:14:49.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.login(java.util.Map) throws java.lang.Exception
+21:14:49.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logout],methods=[GET]}" onto public java.util.Map com.lihebin.blog.web.UserController.logout(java.lang.String)
+21:14:49.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getMenus],methods=[GET]}" onto public java.util.List<com.lihebin.blog.bean.UserMenu> com.lihebin.blog.web.UserController.getMenus(java.lang.String)
+21:14:49.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/insertAndDeleteUser],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.insertAndDeleteUser(java.util.Map)
+21:14:49.405 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:14:49.406 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:14:49.544 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:14:46 CST 2019]; root of context hierarchy
+21:14:50.529 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:14:50.531 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'backendDataSource' has been autodetected for JMX exposure
+21:14:50.531 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'blogDataSource' has been autodetected for JMX exposure
+21:14:50.537 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'blogDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=blogDataSource,type=DruidDataSource]
+21:14:50.540 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'backendDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=backendDataSource,type=DruidDataSource]
+21:14:50.545 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+21:14:50.706 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+21:14:50.711 [main] INFO  com.lihebin.blog.Application - Started Application in 5.11 seconds (JVM running for 6.87)
+21:15:16.137 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:15:16.138 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:15:16.168 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+21:15:16.294 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web request>>[com.lihebin.blog.bean.Articles@1d29cbb2]
+21:15:16.299 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] request>>[com.lihebin.blog.bean.Articles@1d29cbb2]
+21:15:18.275 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+21:15:18.368 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] response>>com.lihebin.blog.bean.Articles@280443ac
+21:15:18.369 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web response>>com.lihebin.blog.bean.Articles@280443ac
+21:15:39.221 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:15:39.222 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:15:39.259 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] response>>com.lihebin.blog.bean.Article@2d1080f2
+21:15:39.260 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] web response>>com.lihebin.blog.bean.Article@2d1080f2
+21:15:48.360 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID47][updateBlog] web request>>[com.lihebin.blog.bean.Article@3de46ce9]
+21:15:48.361 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID47][updateBlog] request>>[com.lihebin.blog.bean.Article@3de46ce9]
+21:15:48.379 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.lihebin.blog.dao.ArticleDao.updateArticle(ArticleDao.java:200)
+	at com.lihebin.blog.dao.ArticleDao$$FastClassBySpringCGLIB$$a6456bb6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.dao.ArticleDao$$EnhancerBySpringCGLIB$$dec406fd.updateArticle(<generated>)
+	at com.lihebin.blog.service.BlogServiceImpl.updateBlog(BlogServiceImpl.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:150)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.updateBlog(Unknown Source)
+	at com.lihebin.blog.web.BlogController.updateBlog(BlogController.java:30)
+	at com.lihebin.blog.web.BlogController$$FastClassBySpringCGLIB$$2c2394d6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.web.BlogController$$EnhancerBySpringCGLIB$$c30cb771.updateBlog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+21:17:33.502 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:17:33.503 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:17:33.571 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getBlog] response>>com.lihebin.blog.bean.Article@2d6a79ac
+21:17:33.571 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getBlog] web response>>com.lihebin.blog.bean.Article@2d6a79ac
+21:17:57.352 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:17:57.359 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:17:57.392 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] response>>com.lihebin.blog.bean.Article@391181fd
+21:17:57.392 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] web response>>com.lihebin.blog.bean.Article@391181fd
+21:18:01.966 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web request>>[com.lihebin.blog.bean.Articles@774c8f6a]
+21:18:01.966 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] request>>[com.lihebin.blog.bean.Articles@774c8f6a]
+21:18:02.034 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] response>>com.lihebin.blog.bean.Articles@1bdf89ba
+21:18:02.034 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web response>>com.lihebin.blog.bean.Articles@1bdf89ba
+21:18:04.841 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:18:04.841 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:18:04.873 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] response>>com.lihebin.blog.bean.Article@218b5855
+21:18:04.874 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] web response>>com.lihebin.blog.bean.Article@218b5855
+21:18:40.781 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:18:40.781 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:18:40.814 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] response>>com.lihebin.blog.bean.Article@38edce89
+21:18:40.815 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] web response>>com.lihebin.blog.bean.Article@38edce89
+21:18:45.042 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@63fb2643]
+21:18:45.042 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@63fb2643]
+21:18:45.111 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@84dcb6b
+21:18:45.111 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@84dcb6b
+21:18:50.406 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:18:50.406 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:18:50.439 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] response>>com.lihebin.blog.bean.Article@782c8bc6
+21:18:50.439 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getBlog] web response>>com.lihebin.blog.bean.Article@782c8bc6
+21:18:57.673 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][updateBlog] web request>>[com.lihebin.blog.bean.Article@87b7274]
+21:18:57.673 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID43][updateBlog] request>>[com.lihebin.blog.bean.Article@87b7274]
+21:18:57.674 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.lihebin.blog.dao.ArticleDao.updateArticle(ArticleDao.java:210)
+	at com.lihebin.blog.dao.ArticleDao$$FastClassBySpringCGLIB$$a6456bb6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.dao.ArticleDao$$EnhancerBySpringCGLIB$$dec406fd.updateArticle(<generated>)
+	at com.lihebin.blog.service.BlogServiceImpl.updateBlog(BlogServiceImpl.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:150)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.updateBlog(Unknown Source)
+	at com.lihebin.blog.web.BlogController.updateBlog(BlogController.java:30)
+	at com.lihebin.blog.web.BlogController$$FastClassBySpringCGLIB$$2c2394d6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.web.BlogController$$EnhancerBySpringCGLIB$$c30cb771.updateBlog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+21:20:19.375 [Thread-16] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:14:46 CST 2019]; root of context hierarchy
+21:20:19.376 [Thread-16] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+21:20:19.377 [Thread-16] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+21:20:19.378 [Thread-16] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+21:20:19.378 [Thread-16] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+21:20:19.385 [Thread-16] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+21:20:26.980 [main] INFO  com.lihebin.blog.Application - Starting Application on 192.168.1.2 with PID 90573 (/Users/lihebin/github/blog-message-backend/blog-war/target/classes started by lihebin in /Users/lihebin/github/blog-message-backend)
+21:20:26.984 [main] INFO  com.lihebin.blog.Application - The following profiles are active: test
+21:20:27.062 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:20:27 CST 2019]; root of context hierarchy
+21:20:27.564 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/Users/lihebin/github/blog-message-backend/blog-war/target/classes/spring/interceptor-config.xml]
+21:20:27.801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:20:28.124 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a8a8f8b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:28.901 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+21:20:28.910 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:20:28.911 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+21:20:28.985 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:20:28.985 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1923 ms
+21:20:29.186 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:20:29.187 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+21:20:29.187 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21:20:30.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/deleteBlog],methods=[GET]}" onto public void com.lihebin.blog.web.BlogController.deleteBlog(java.lang.String)
+21:20:30.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/listBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Articles com.lihebin.blog.web.BlogController.listBlog(com.lihebin.blog.bean.Articles)
+21:20:30.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getBlog],methods=[GET]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.getBlog(java.lang.String)
+21:20:30.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/updateBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.updateBlog(com.lihebin.blog.bean.Article)
+21:20:30.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/createBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.createBlog(com.lihebin.blog.bean.Article)
+21:20:30.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/relevanceUserAndMenu],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.relevanceUserAndMenu(java.util.Map)
+21:20:30.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logout],methods=[GET]}" onto public java.util.Map com.lihebin.blog.web.UserController.logout(java.lang.String)
+21:20:30.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.login(java.util.Map) throws java.lang.Exception
+21:20:30.066 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getMenus],methods=[GET]}" onto public java.util.List<com.lihebin.blog.bean.UserMenu> com.lihebin.blog.web.UserController.getMenus(java.lang.String)
+21:20:30.066 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/insertAndDeleteUser],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.insertAndDeleteUser(java.util.Map)
+21:20:30.069 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:20:30.070 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:20:30.195 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:20:27 CST 2019]; root of context hierarchy
+21:20:31.214 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:20:31.216 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'backendDataSource' has been autodetected for JMX exposure
+21:20:31.216 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'blogDataSource' has been autodetected for JMX exposure
+21:20:31.222 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'blogDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=blogDataSource,type=DruidDataSource]
+21:20:31.224 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'backendDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=backendDataSource,type=DruidDataSource]
+21:20:31.228 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+21:20:31.398 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+21:20:31.403 [main] INFO  com.lihebin.blog.Application - Started Application in 4.773 seconds (JVM running for 5.532)
+21:20:45.883 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:20:45.885 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:20:45.917 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+21:20:45.969 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID40][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:20:45.974 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID40][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:20:47.782 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] web request>>[com.lihebin.blog.bean.Articles@24594533]
+21:20:47.783 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] request>>[com.lihebin.blog.bean.Articles@24594533]
+21:20:47.897 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+21:20:47.951 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID40][getBlog] response>>com.lihebin.blog.bean.Article@699699ed
+21:20:47.951 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID40][getBlog] web response>>com.lihebin.blog.bean.Article@699699ed
+21:20:47.986 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] response>>com.lihebin.blog.bean.Articles@6c837b24
+21:20:47.986 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] web response>>com.lihebin.blog.bean.Articles@6c837b24
+21:20:50.221 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:20:50.221 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:20:50.257 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] response>>com.lihebin.blog.bean.Article@358f8dcb
+21:20:50.258 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] web response>>com.lihebin.blog.bean.Article@358f8dcb
+21:20:56.211 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID45][updateBlog] web request>>[com.lihebin.blog.bean.Article@446a69f]
+21:20:56.212 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID45][updateBlog] request>>[com.lihebin.blog.bean.Article@446a69f]
+21:20:56.254 [http-nio-8080-exec-7] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+21:20:56.288 [http-nio-8080-exec-7] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+21:20:56.294 [http-nio-8080-exec-7] ERROR com.lihebin.blog.dao.ArticleDao - updateArticle: com.lihebin.blog.bean.Article@446a69f, {}
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [update article set version = version + 1, mtime =: mtime, title =: title, classify =: classify, content =: content where id =: id]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': mtime, title =: title, classify =: classify, content =: content where id =: id' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:870)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:894)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:287)
+	at com.lihebin.blog.dao.ArticleDao.updateArticle(ArticleDao.java:223)
+	at com.lihebin.blog.dao.ArticleDao$$FastClassBySpringCGLIB$$a6456bb6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.dao.ArticleDao$$EnhancerBySpringCGLIB$$e17c4b2a.updateArticle(<generated>)
+	at com.lihebin.blog.service.BlogServiceImpl.updateBlog(BlogServiceImpl.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:150)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.updateBlog(Unknown Source)
+	at com.lihebin.blog.web.BlogController.updateBlog(BlogController.java:30)
+	at com.lihebin.blog.web.BlogController$$FastClassBySpringCGLIB$$2c2394d6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.web.BlogController$$EnhancerBySpringCGLIB$$91f70722.updateBlog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': mtime, title =: title, classify =: classify, content =: content where id =: id' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:256)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:877)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:870)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	... 89 common frames omitted
+21:20:56.295 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID45][updateBlog] response>>com.lihebin.blog.bean.Article@75686235
+21:20:56.295 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID45][updateBlog] web response>>com.lihebin.blog.bean.Article@75686235
+21:25:18.228 [Thread-15] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:20:27 CST 2019]; root of context hierarchy
+21:25:18.232 [Thread-15] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+21:25:18.232 [Thread-15] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+21:25:18.233 [Thread-15] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+21:25:18.234 [Thread-15] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+21:25:18.240 [Thread-15] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+21:25:25.238 [main] INFO  com.lihebin.blog.Application - Starting Application on 192.168.1.2 with PID 90588 (/Users/lihebin/github/blog-message-backend/blog-war/target/classes started by lihebin in /Users/lihebin/github/blog-message-backend)
+21:25:25.242 [main] INFO  com.lihebin.blog.Application - The following profiles are active: test
+21:25:25.301 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:25:25 CST 2019]; root of context hierarchy
+21:25:25.822 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/Users/lihebin/github/blog-message-backend/blog-war/target/classes/spring/interceptor-config.xml]
+21:25:26.108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:25:26.495 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$8dba3381] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:25:27.311 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+21:25:27.319 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:25:27.320 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+21:25:27.395 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:25:27.396 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2095 ms
+21:25:27.600 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:25:27.601 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+21:25:27.601 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21:25:28.442 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/listBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Articles com.lihebin.blog.web.BlogController.listBlog(com.lihebin.blog.bean.Articles)
+21:25:28.443 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getBlog],methods=[GET]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.getBlog(java.lang.String)
+21:25:28.443 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/updateBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.updateBlog(com.lihebin.blog.bean.Article)
+21:25:28.443 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/createBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.createBlog(com.lihebin.blog.bean.Article)
+21:25:28.443 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/deleteBlog],methods=[GET]}" onto public void com.lihebin.blog.web.BlogController.deleteBlog(java.lang.String)
+21:25:28.444 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/relevanceUserAndMenu],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.relevanceUserAndMenu(java.util.Map)
+21:25:28.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.login(java.util.Map) throws java.lang.Exception
+21:25:28.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logout],methods=[GET]}" onto public java.util.Map com.lihebin.blog.web.UserController.logout(java.lang.String)
+21:25:28.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getMenus],methods=[GET]}" onto public java.util.List<com.lihebin.blog.bean.UserMenu> com.lihebin.blog.web.UserController.getMenus(java.lang.String)
+21:25:28.446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/insertAndDeleteUser],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.insertAndDeleteUser(java.util.Map)
+21:25:28.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:25:28.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:25:28.565 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:25:25 CST 2019]; root of context hierarchy
+21:25:29.562 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:25:29.564 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'backendDataSource' has been autodetected for JMX exposure
+21:25:29.564 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'blogDataSource' has been autodetected for JMX exposure
+21:25:29.571 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'blogDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=blogDataSource,type=DruidDataSource]
+21:25:29.573 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'backendDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=backendDataSource,type=DruidDataSource]
+21:25:29.576 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+21:25:29.757 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+21:25:29.763 [main] INFO  com.lihebin.blog.Application - Started Application in 4.854 seconds (JVM running for 5.654)
+21:25:42.333 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:25:42.334 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:25:42.366 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+21:25:42.417 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:25:42.423 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:25:44.355 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+21:25:44.407 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] response>>com.lihebin.blog.bean.Article@3a9aea28
+21:25:44.408 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] web response>>com.lihebin.blog.bean.Article@3a9aea28
+21:25:44.476 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web request>>[com.lihebin.blog.bean.Articles@5dfe20bc]
+21:25:44.476 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] request>>[com.lihebin.blog.bean.Articles@5dfe20bc]
+21:25:44.546 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] response>>com.lihebin.blog.bean.Articles@4df078b6
+21:25:44.546 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web response>>com.lihebin.blog.bean.Articles@4df078b6
+21:25:47.251 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID44][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:25:47.257 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID44][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:25:47.291 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID44][getBlog] response>>com.lihebin.blog.bean.Article@6776bf48
+21:25:47.291 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID44][getBlog] web response>>com.lihebin.blog.bean.Article@6776bf48
+21:25:54.097 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][updateBlog] web request>>[com.lihebin.blog.bean.Article@1e012d5d]
+21:25:54.098 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][updateBlog] request>>[com.lihebin.blog.bean.Article@1e012d5d]
+21:25:54.138 [http-nio-8080-exec-7] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+21:25:54.172 [http-nio-8080-exec-7] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+21:25:54.178 [http-nio-8080-exec-7] ERROR com.lihebin.blog.dao.ArticleDao - updateArticle: com.lihebin.blog.bean.Article@1e012d5d, {}
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [update article set version = version + 1, mtime =?, title =?, classify =?, content =? where id =: id]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': id' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:870)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:894)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:287)
+	at com.lihebin.blog.dao.ArticleDao.updateArticle(ArticleDao.java:223)
+	at com.lihebin.blog.dao.ArticleDao$$FastClassBySpringCGLIB$$a6456bb6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.dao.ArticleDao$$EnhancerBySpringCGLIB$$2f767820.updateArticle(<generated>)
+	at com.lihebin.blog.service.BlogServiceImpl.updateBlog(BlogServiceImpl.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:150)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.updateBlog(Unknown Source)
+	at com.lihebin.blog.web.BlogController.updateBlog(BlogController.java:30)
+	at com.lihebin.blog.web.BlogController$$FastClassBySpringCGLIB$$2c2394d6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.web.BlogController$$EnhancerBySpringCGLIB$$94a87a63.updateBlog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': id' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:256)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:877)
+	at org.springframework.jdbc.core.JdbcTemplate$2.doInPreparedStatement(JdbcTemplate.java:870)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
+	... 89 common frames omitted
+21:25:54.180 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][updateBlog] response>>com.lihebin.blog.bean.Article@5c86c2a5
+21:25:54.180 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][updateBlog] web response>>com.lihebin.blog.bean.Article@5c86c2a5
+21:26:32.688 [Thread-15] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:25:25 CST 2019]; root of context hierarchy
+21:26:32.690 [Thread-15] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+21:26:32.690 [Thread-15] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+21:26:32.691 [Thread-15] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+21:26:32.692 [Thread-15] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+21:26:32.697 [Thread-15] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+21:26:40.225 [main] INFO  com.lihebin.blog.Application - Starting Application on 192.168.1.2 with PID 90594 (/Users/lihebin/github/blog-message-backend/blog-war/target/classes started by lihebin in /Users/lihebin/github/blog-message-backend)
+21:26:40.229 [main] INFO  com.lihebin.blog.Application - The following profiles are active: test
+21:26:40.288 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:26:40 CST 2019]; root of context hierarchy
+21:26:40.794 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/Users/lihebin/github/blog-message-backend/blog-war/target/classes/spring/interceptor-config.xml]
+21:26:41.046 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:26:41.399 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$6f2650fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:26:42.161 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+21:26:42.169 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:26:42.170 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+21:26:42.242 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:26:42.242 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1954 ms
+21:26:42.429 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:26:42.430 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+21:26:42.430 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21:26:43.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getBlog],methods=[GET]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.getBlog(java.lang.String)
+21:26:43.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/listBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Articles com.lihebin.blog.web.BlogController.listBlog(com.lihebin.blog.bean.Articles)
+21:26:43.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/updateBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.updateBlog(com.lihebin.blog.bean.Article)
+21:26:43.229 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/createBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.createBlog(com.lihebin.blog.bean.Article)
+21:26:43.229 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/deleteBlog],methods=[GET]}" onto public void com.lihebin.blog.web.BlogController.deleteBlog(java.lang.String)
+21:26:43.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/relevanceUserAndMenu],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.relevanceUserAndMenu(java.util.Map)
+21:26:43.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.login(java.util.Map) throws java.lang.Exception
+21:26:43.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logout],methods=[GET]}" onto public java.util.Map com.lihebin.blog.web.UserController.logout(java.lang.String)
+21:26:43.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getMenus],methods=[GET]}" onto public java.util.List<com.lihebin.blog.bean.UserMenu> com.lihebin.blog.web.UserController.getMenus(java.lang.String)
+21:26:43.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/insertAndDeleteUser],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.insertAndDeleteUser(java.util.Map)
+21:26:43.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:26:43.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:26:43.344 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Mon Mar 25 21:26:40 CST 2019]; root of context hierarchy
+21:26:44.254 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:26:44.255 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'backendDataSource' has been autodetected for JMX exposure
+21:26:44.255 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'blogDataSource' has been autodetected for JMX exposure
+21:26:44.261 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'blogDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=blogDataSource,type=DruidDataSource]
+21:26:44.263 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'backendDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=backendDataSource,type=DruidDataSource]
+21:26:44.266 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+21:26:44.436 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+21:26:44.443 [main] INFO  com.lihebin.blog.Application - Started Application in 4.58 seconds (JVM running for 5.549)
+21:27:07.075 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:27:07.075 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:27:07.107 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+21:27:07.161 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:27:07.167 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:27:09.109 [http-nio-8080-exec-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+21:27:09.156 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] response>>com.lihebin.blog.bean.Article@4e584cca
+21:27:09.156 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] web response>>com.lihebin.blog.bean.Article@4e584cca
+21:27:09.584 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web request>>[com.lihebin.blog.bean.Articles@5837e9e7]
+21:27:09.584 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] request>>[com.lihebin.blog.bean.Articles@5837e9e7]
+21:27:09.650 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] response>>com.lihebin.blog.bean.Articles@18a9d80c
+21:27:09.651 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web response>>com.lihebin.blog.bean.Articles@18a9d80c
+21:27:12.352 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] web request>>[cc8596c7-f93b-4700-a462-5debc78cdaa6]
+21:27:12.362 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] request>>[cc8596c7-f93b-4700-a462-5debc78cdaa6]
+21:27:12.393 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] response>>com.lihebin.blog.bean.Article@44461313
+21:27:12.393 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getBlog] web response>>com.lihebin.blog.bean.Article@44461313
+21:27:18.526 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][updateBlog] web request>>[com.lihebin.blog.bean.Article@6a38bc5d]
+21:27:18.527 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][updateBlog] request>>[com.lihebin.blog.bean.Article@6a38bc5d]
+21:27:18.592 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][updateBlog] response>>com.lihebin.blog.bean.Article@41a3135a
+21:27:18.592 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][updateBlog] web response>>com.lihebin.blog.bean.Article@41a3135a
+21:27:28.683 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@77f5bc74]
+21:27:28.684 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@77f5bc74]
+21:27:28.748 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@380f46c1
+21:27:28.748 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@380f46c1
+21:27:31.980 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:27:31.981 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:27:32.012 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] response>>com.lihebin.blog.bean.Article@de3ddc2
+21:27:32.012 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID41][getBlog] web response>>com.lihebin.blog.bean.Article@de3ddc2
+21:27:39.173 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][updateBlog] web request>>[com.lihebin.blog.bean.Article@74ca6883]
+21:27:39.173 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][updateBlog] request>>[com.lihebin.blog.bean.Article@74ca6883]
+21:27:39.239 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][updateBlog] response>>com.lihebin.blog.bean.Article@79adee39
+21:27:39.239 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][updateBlog] web response>>com.lihebin.blog.bean.Article@79adee39
+21:27:42.263 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web request>>[com.lihebin.blog.bean.Articles@40798f43]
+21:27:42.263 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] request>>[com.lihebin.blog.bean.Articles@40798f43]
+21:27:42.329 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] response>>com.lihebin.blog.bean.Articles@317270fa
+21:27:42.330 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web response>>com.lihebin.blog.bean.Articles@317270fa
+21:27:46.545 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:27:46.545 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:27:46.576 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] response>>com.lihebin.blog.bean.Article@756fd4ce
+21:27:46.576 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getBlog] web response>>com.lihebin.blog.bean.Article@756fd4ce
+21:27:50.028 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@62c35ba8]
+21:27:50.029 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@62c35ba8]
+21:27:50.091 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@45aa9489
+21:27:50.091 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@45aa9489
+21:29:23.394 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID42][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:29:23.394 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID42][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:29:23.457 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID42][getBlog] response>>com.lihebin.blog.bean.Article@1f10b121
+21:29:23.457 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID42][getBlog] web response>>com.lihebin.blog.bean.Article@1f10b121
+21:31:17.093 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:31:17.093 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:31:17.095 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/api/getClassify] in DispatcherServlet with name 'dispatcherServlet'
+21:31:17.154 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] response>>com.lihebin.blog.bean.Article@43c7a37e
+21:31:17.154 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] web response>>com.lihebin.blog.bean.Article@43c7a37e
+21:32:41.940 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] web request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:32:41.941 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] request>>[3990c0db-7082-4902-a03e-b0fd2ae1f6b1]
+21:32:41.941 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/blog/getClassify] in DispatcherServlet with name 'dispatcherServlet'
+21:32:42.001 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] response>>com.lihebin.blog.bean.Article@31e6f197
+21:32:42.006 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] web response>>com.lihebin.blog.bean.Article@31e6f197

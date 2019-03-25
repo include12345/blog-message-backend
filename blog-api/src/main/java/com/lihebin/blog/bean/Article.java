@@ -9,34 +9,32 @@ public class Article extends Base {
 
     private Integer classify;
 
+    private String classifyName;
+
     private String content;
 
-    private Integer createAuthorId;
+    private String createAuthorId;
 
-    private Integer updateAuthorId;
+    private String updateAuthorId;
 
-    private Integer create_author_id;
+    private String create_author_id;
 
-    private Integer update_author_id;
+    private String update_author_id;
 
     private String createAuthor;
 
     private String updateAuthor;
 
-    public Integer getCreate_author_id() {
-        return create_author_id;
+    private String timeStart;
+
+    private String timeEnd;
+
+    public String getClassifyName() {
+        return classifyName;
     }
 
-    public void setCreate_author_id(Integer create_author_id) {
-        this.create_author_id = create_author_id;
-    }
-
-    public Integer getUpdate_author_id() {
-        return update_author_id;
-    }
-
-    public void setUpdate_author_id(Integer update_author_id) {
-        this.update_author_id = update_author_id;
+    public void setClassifyName(String classifyName) {
+        this.classifyName = classifyName;
     }
 
     public String getTitle() {
@@ -63,22 +61,6 @@ public class Article extends Base {
         this.content = content;
     }
 
-    public Integer getCreateAuthorId() {
-        return createAuthorId;
-    }
-
-    public void setCreateAuthorId(Integer createAuthorId) {
-        this.createAuthorId = createAuthorId;
-    }
-
-    public Integer getUpdateAuthorId() {
-        return updateAuthorId;
-    }
-
-    public void setUpdateAuthorId(Integer updateAuthorId) {
-        this.updateAuthorId = updateAuthorId;
-    }
-
     public String getCreateAuthor() {
         return createAuthor;
     }
@@ -93,5 +75,53 @@ public class Article extends Base {
 
     public void setUpdateAuthor(String updateAuthor) {
         this.updateAuthor = updateAuthor;
+    }
+
+    public String getCreateAuthorId() {
+        return createAuthorId;
+    }
+
+    public void setCreateAuthorId(String createAuthorId) {
+        this.createAuthorId = createAuthorId;
+    }
+
+    public String getUpdateAuthorId() {
+        return updateAuthorId;
+    }
+
+    public void setUpdateAuthorId(String updateAuthorId) {
+        this.updateAuthorId = updateAuthorId;
+    }
+
+    public String getCreate_author_id() {
+        return create_author_id;
+    }
+
+    public void setCreate_author_id(String create_author_id) {
+        this.create_author_id = create_author_id;
+    }
+
+    public String getUpdate_author_id() {
+        return update_author_id;
+    }
+
+    public void setUpdate_author_id(String update_author_id) {
+        this.update_author_id = update_author_id;
+    }
+
+    public String getTimeStart() {
+        return timeStart;
+    }
+
+    public void setTimeStart(String timeStart) {
+        this.timeStart = timeStart;
+    }
+
+    public String getTimeEnd() {
+        return timeEnd;
+    }
+
+    public void setTimeEnd(String timeEnd) {
+        this.timeEnd = timeEnd;
     }
 }

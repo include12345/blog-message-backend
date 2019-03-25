@@ -18,6 +18,13 @@ public interface UserDao {
     User queryUserByUsername(String username);
 
     /**
+     * 根据 name查询
+     * @param name
+     * @return
+     */
+    User getUserNameByName(String name);
+
+    /**
      * 根据用户名查权限列表
      *
      * @param username

@@ -6,6 +6,8 @@ import com.lihebin.blog.bean.Articles;
 import com.sun.istack.internal.NotNull;
 import org.springframework.validation.annotation.Validated;
 
+import java.util.List;
+
 /**
  * Created by lihebin on 2019/3/24.
  */
@@ -50,4 +52,10 @@ public interface BlogService {
      */
     void deleteBlog(String id);
 
+    /**
+     * 标签
+     *
+     * @return
+     */
+    List<String> getClassify();
 }
