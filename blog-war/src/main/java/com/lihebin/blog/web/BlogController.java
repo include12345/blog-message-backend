@@ -1,10 +1,12 @@
 package com.lihebin.blog.web;
 
 import com.lihebin.blog.bean.*;
+import com.lihebin.blog.dao.CacheDao;
 import com.lihebin.blog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -16,6 +18,9 @@ public class BlogController {
     @Autowired
     private BlogService blogService;
 
+    @Autowired
+    private CacheDao cacheDao;
+
     @RequestMapping(value = "/blog/getBlog", method = RequestMethod.GET)
     public Article getBlog(@RequestParam(value = "id", required = true) String id) {
         return blogService.getBlog(id);
@@ -26,14 +31,18 @@ public class BlogController {
         return blogService.listBlog(articles);
     }
 
-    @RequestMapping(value = "/blog/updateBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/api/blog/updateBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Article updateBlog(@RequestBody Article article) {
+    public Article updateBlog(@RequestBody Article article, HttpServletRequest request) {
+        String token = request.getHeader(User.TOKEN);
+        String[] param = token.split("-");
+        String username = cacheDao.getValue(param[0]);
+        article.setUpdateAuthorId(username);
         return blogService.updateBlog(article);
     }
 
 
-    @RequestMapping(value = "/blog/deleteBlog",  method = RequestMethod.GET)
+    @RequestMapping(value = "/api/blog/deleteBlog",  method = RequestMethod.GET)
     @ResponseBody
     public void deleteBlog(@RequestParam(value = "id", required = true) String id) {
         blogService.deleteBlog(id);
@@ -47,9 +56,14 @@ public class BlogController {
     }
 
 
-    @RequestMapping(value = "/blog/createBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/api/blog/createBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Article createBlog(@RequestBody Article article) {
+    public Article createBlog(@RequestBody Article article, HttpServletRequest request) {
+        String token = request.getHeader(User.TOKEN);
+        String[] param = token.split("-");
+        String username = cacheDao.getValue(param[0]);
+        article.setCreateAuthorId(username);
+        article.setUpdateAuthorId(username);
         return blogService.createBlog(article);
     }
 

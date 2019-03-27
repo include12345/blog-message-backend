@@ -1,0 +1,24 @@
+23:00:17.752 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getMenus] web request>>[e7ad4f1ac9634fa9d10eb4c405729b9f]
+23:00:17.756 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listMenuByToken] request>>[e7ad4f1ac9634fa9d10eb4c405729b9f]
+23:00:17.792 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listMenuByToken] response>>[com.lihebin.blog.bean.UserMenu@16155279]
+23:00:17.792 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getMenus] web response>>[com.lihebin.blog.bean.UserMenu@16155279]
+23:00:42.747 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getMenus] web request>>[e7ad4f1ac9634fa9d10eb4c405729b9f]
+23:00:42.753 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listMenuByToken] request>>[e7ad4f1ac9634fa9d10eb4c405729b9f]
+23:00:42.789 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listMenuByToken] response>>[com.lihebin.blog.bean.UserMenu@139098e0]
+23:00:42.789 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getMenus] web response>>[com.lihebin.blog.bean.UserMenu@139098e0]
+23:02:08.282 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID39][getMenus] web request>>[e7ad4f1ac9634fa9d10eb4c405729b9f]
+23:02:08.282 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID39][listMenuByToken] request>>[e7ad4f1ac9634fa9d10eb4c405729b9f]
+23:02:08.350 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID39][listMenuByToken] response>>[com.lihebin.blog.bean.UserMenu@ca09ab2]
+23:02:08.350 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID39][getMenus] web response>>[com.lihebin.blog.bean.UserMenu@ca09ab2]
+23:02:12.164 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID41][listBlog] web request>>[com.lihebin.blog.bean.Articles@2665b653]
+23:02:12.167 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID41][listBlog] request>>[com.lihebin.blog.bean.Articles@2665b653]
+23:02:13.891 [http-nio-8080-exec-3] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+23:02:13.966 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID41][listBlog] response>>com.lihebin.blog.bean.Articles@f32a16b
+23:02:13.966 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID41][listBlog] web response>>com.lihebin.blog.bean.Articles@f32a16b
+23:02:52.361 [Thread-15] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b8b43c7: startup date [Tue Mar 26 22:55:08 CST 2019]; root of context hierarchy
+23:02:52.365 [Thread-15] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+23:02:52.365 [Thread-15] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+23:02:52.366 [Thread-15] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+23:02:52.366 [Thread-15] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+23:02:52.372 [Thread-15] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+23:02:52.375 [Thread-15] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
