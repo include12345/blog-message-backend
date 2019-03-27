@@ -50,7 +50,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/api/insertAndDeleteUser", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/user/insertAndDeleteUser", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Map insertAndDeleteUser(@RequestBody Map params) {
         String username = MapUtils.getString(params, User.USERNAME);

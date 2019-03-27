@@ -1,0 +1,36 @@
+20:54:33.494 [main] INFO  com.lihebin.blog.Application - Starting Application on lihebindembp with PID 92232 (/Users/lihebin/github/blog-message-backend/blog-war/target/classes started by lihebin in /Users/lihebin/github/blog-message-backend)
+20:54:33.500 [main] INFO  com.lihebin.blog.Application - The following profiles are active: test
+20:54:33.559 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Tue Mar 26 20:54:33 CST 2019]; root of context hierarchy
+20:54:34.078 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/Users/lihebin/github/blog-message-backend/blog-war/target/classes/spring/interceptor-config.xml]
+20:54:34.396 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:54:34.776 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$d350a204] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:35.704 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+20:54:35.716 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:54:35.717 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+20:54:35.828 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:54:35.828 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2269 ms
+20:54:36.035 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:54:36.036 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+20:54:36.036 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+20:54:36.996 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getClassify],methods=[GET]}" onto public java.util.List<java.lang.String> com.lihebin.blog.web.BlogController.getClassify()
+20:54:36.998 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/listBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Articles com.lihebin.blog.web.BlogController.listBlog(com.lihebin.blog.bean.Articles)
+20:54:36.999 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getBlog],methods=[GET]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.getBlog(java.lang.String)
+20:54:36.999 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/updateBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.updateBlog(com.lihebin.blog.bean.Article)
+20:54:36.999 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/createBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.createBlog(com.lihebin.blog.bean.Article)
+20:54:37.000 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/deleteBlog],methods=[GET]}" onto public void com.lihebin.blog.web.BlogController.deleteBlog(java.lang.String)
+20:54:37.001 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/relevanceUserAndMenu],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.relevanceUserAndMenu(java.util.Map)
+20:54:37.001 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getMenus],methods=[GET]}" onto public java.util.List<com.lihebin.blog.bean.UserMenu> com.lihebin.blog.web.UserController.getMenus(java.lang.String)
+20:54:37.002 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.login(java.util.Map) throws java.lang.Exception
+20:54:37.002 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logout],methods=[GET]}" onto public java.util.Map com.lihebin.blog.web.UserController.logout(java.lang.String)
+20:54:37.002 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/insertAndDeleteUser],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.insertAndDeleteUser(java.util.Map)
+20:54:37.006 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:54:37.007 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:54:37.144 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Tue Mar 26 20:54:33 CST 2019]; root of context hierarchy
+20:54:38.218 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+20:54:38.220 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'backendDataSource' has been autodetected for JMX exposure
+20:54:38.220 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'blogDataSource' has been autodetected for JMX exposure
+20:54:38.226 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'blogDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=blogDataSource,type=DruidDataSource]
+20:54:38.230 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'backendDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=backendDataSource,type=DruidDataSource]
+20:54:38.236 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+20:54:38.428 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+20:54:38.434 [main] INFO  com.lihebin.blog.Application - Started Application in 5.256 seconds (JVM running for 14.056)
