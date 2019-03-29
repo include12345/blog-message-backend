@@ -110,6 +110,31 @@ public class ArticleDao {
      */
     public Article getArticle(String id){
         String sql = "select * from article where id =:id";
+        return getArticleHandle(sql, id);
+    }
+
+    /**
+     * 查询上一条数据
+     * @param id
+     * @return
+     */
+    public Article getPreArticle(String id){
+        String sql = "select * from article where ctime > (select ctime from article where id = :id) and deleted = 0 order by ctime desc limit 1";
+        return getArticleHandle(sql, id);
+    }
+
+
+    /**
+     * 查询下一条数据
+     * @param id
+     * @return
+     */
+    public Article getNextArticle(String id){
+        String sql = "select * from article where ctime < (select ctime from article where id = :id) and deleted = 0 order by ctime desc limit 1";
+        return getArticleHandle(sql, id);
+    }
+
+    private Article getArticleHandle(String sql, String id) {
         namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(blogTemplate);
         MapSqlParameterSource mapSqlParameterSource = new MapSqlParameterSource();
         mapSqlParameterSource.addValue(ID, id);
@@ -117,10 +142,11 @@ public class ArticleDao {
             RowMapper<Article> rowMapper = new BeanPropertyRowMapper<>(Article.class);
             return namedParameterJdbcTemplate.queryForObject(sql, mapSqlParameterSource, rowMapper);
         } catch (Exception e) {
-            log.error("getArticle: {}, {}", id, e);
+            log.error("getArticle: {}, {}, {}", sql, id, e);
             return new Article();
         }
     }
+
 
 
     /**

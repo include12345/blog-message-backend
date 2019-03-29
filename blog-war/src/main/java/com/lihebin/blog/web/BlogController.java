@@ -26,6 +26,11 @@ public class BlogController {
         return blogService.getBlog(id);
     }
 
+    @RequestMapping(value = "/blog/getPreNextBlog", method = RequestMethod.GET)
+    public PreNext getPreNextBlog(@RequestParam(value = "id", required = true) String id) {
+        return blogService.getPreNextBlog(id);
+    }
+
     @RequestMapping(value = "/blog/listBlog", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     public Articles listBlog(@RequestBody Articles articles) {
         return blogService.listBlog(articles);

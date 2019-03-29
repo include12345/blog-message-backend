@@ -3,7 +3,7 @@ package com.lihebin.blog.service;
 import com.lihebin.blog.annotation.BackendAnnotation;
 import com.lihebin.blog.bean.Article;
 import com.lihebin.blog.bean.Articles;
-import com.sun.istack.internal.NotNull;
+import com.lihebin.blog.bean.PreNext;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
@@ -58,4 +58,11 @@ public interface BlogService {
      * @return
      */
     List<String> getClassify();
+
+    /**
+     * 查询博客上下级信息
+     * @param id
+     * @return
+     */
+    PreNext getPreNextBlog(String id);
 }

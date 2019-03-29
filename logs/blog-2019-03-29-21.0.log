@@ -1,0 +1,60 @@
+21:40:39.347 [main] INFO  com.lihebin.blog.Application - Starting Application on lihebindembp with PID 2621 (/Users/lihebin/github/blog-message-backend/blog-war/target/classes started by lihebin in /Users/lihebin/github/blog-message-backend)
+21:40:39.352 [main] INFO  com.lihebin.blog.Application - The following profiles are active: test
+21:40:39.407 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Fri Mar 29 21:40:39 CST 2019]; root of context hierarchy
+21:40:39.914 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [/Users/lihebin/github/blog-message-backend/blog-war/target/classes/spring/interceptor-config.xml]
+21:40:40.216 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+21:40:40.514 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$55678cfb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:40:41.246 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+21:40:41.254 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:40:41.255 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+21:40:41.324 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:40:41.324 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1917 ms
+21:40:41.500 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+21:40:41.501 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+21:40:41.501 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+21:40:42.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/listBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Articles com.lihebin.blog.web.BlogController.listBlog(com.lihebin.blog.bean.Articles)
+21:40:42.387 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getBlog],methods=[GET]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.getBlog(java.lang.String)
+21:40:42.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getClassify],methods=[GET]}" onto public java.util.List<java.lang.String> com.lihebin.blog.web.BlogController.getClassify()
+21:40:42.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/blog/updateBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.updateBlog(com.lihebin.blog.bean.Article,javax.servlet.http.HttpServletRequest)
+21:40:42.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/blog/createBlog],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.lihebin.blog.bean.Article com.lihebin.blog.web.BlogController.createBlog(com.lihebin.blog.bean.Article,javax.servlet.http.HttpServletRequest)
+21:40:42.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/blog/deleteBlog],methods=[GET]}" onto public void com.lihebin.blog.web.BlogController.deleteBlog(java.lang.String)
+21:40:42.389 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/getPreNextBlog],methods=[GET]}" onto public com.lihebin.blog.bean.PreNext com.lihebin.blog.web.BlogController.getPreNextBlog(java.lang.String)
+21:40:42.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.login(java.util.Map) throws java.lang.Exception
+21:40:42.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/relevanceUserAndMenu],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.relevanceUserAndMenu(java.util.Map)
+21:40:42.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logout],methods=[GET]}" onto public java.util.Map com.lihebin.blog.web.UserController.logout(java.lang.String)
+21:40:42.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getMenus],methods=[GET]}" onto public java.util.List<com.lihebin.blog.bean.UserMenu> com.lihebin.blog.web.UserController.getMenus(java.lang.String)
+21:40:42.391 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/insertAndDeleteUser],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.util.Map com.lihebin.blog.web.UserController.insertAndDeleteUser(java.util.Map)
+21:40:42.395 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:40:42.395 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:40:42.515 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3eb77ea8: startup date [Fri Mar 29 21:40:39 CST 2019]; root of context hierarchy
+21:40:43.532 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:40:43.541 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'backendDataSource' has been autodetected for JMX exposure
+21:40:43.541 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'blogDataSource' has been autodetected for JMX exposure
+21:40:43.548 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'blogDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=blogDataSource,type=DruidDataSource]
+21:40:43.552 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'backendDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=backendDataSource,type=DruidDataSource]
+21:40:43.557 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+21:40:43.767 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+21:40:43.775 [main] INFO  com.lihebin.blog.Application - Started Application in 4.722 seconds (JVM running for 5.979)
+21:40:55.464 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:40:55.467 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:40:55.498 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+21:40:55.514 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+21:40:55.678 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+21:45:11.883 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web request>>[com.lihebin.blog.bean.Articles@72f5dcd4]
+21:45:11.890 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] request>>[com.lihebin.blog.bean.Articles@72f5dcd4]
+21:45:13.746 [http-nio-8080-exec-6] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+21:45:15.571 [http-nio-8080-exec-6] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+21:45:15.640 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] response>>com.lihebin.blog.bean.Articles@6eb75989
+21:45:15.640 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web response>>com.lihebin.blog.bean.Articles@6eb75989
+21:51:42.131 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@730d667e]
+21:51:42.132 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@730d667e]
+21:51:46.317 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@78c83155
+21:51:46.317 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@78c83155
+21:53:27.699 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] web request>>[com.lihebin.blog.bean.Articles@4dcea65a]
+21:53:27.702 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] request>>[com.lihebin.blog.bean.Articles@4dcea65a]
+21:53:27.924 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] response>>com.lihebin.blog.bean.Articles@3eacac6
+21:53:27.925 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID42][listBlog] web response>>com.lihebin.blog.bean.Articles@3eacac6
+21:54:29.657 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web request>>[com.lihebin.blog.bean.Articles@471be021]
+21:54:29.659 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] request>>[com.lihebin.blog.bean.Articles@471be021]
+21:54:29.876 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] response>>com.lihebin.blog.bean.Articles@8a85718
+21:54:29.877 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web response>>com.lihebin.blog.bean.Articles@8a85718

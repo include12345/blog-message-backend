@@ -3,6 +3,7 @@ package com.lihebin.blog.service;
 import com.lihebin.blog.bean.Article;
 import com.lihebin.blog.bean.Articles;
 import com.lihebin.blog.bean.PageInfo;
+import com.lihebin.blog.bean.PreNext;
 import com.lihebin.blog.dao.ArticleDao;
 import com.lihebin.blog.dao.ClassifyDao;
 import com.lihebin.blog.dao.UserDao;
@@ -76,6 +77,18 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public List<String> getClassify() {
         return classifyDao.listClassify();
+    }
+
+    @Override
+    public PreNext getPreNextBlog(String id) {
+        Article preArticle = articleDao.getPreArticle(id);
+        Article nextArticle = articleDao.getNextArticle(id);
+        PreNext preNext = new PreNext();
+        preNext.setPreId(preArticle.getId());
+        preNext.setPreTitle(preArticle.getTitle());
+        preNext.setNextId(nextArticle.getId());
+        preNext.setNextTitle(nextArticle.getTitle());
+        return preNext;
     }
 
 
