@@ -9,7 +9,9 @@ com/lihebin/blog/service/BlogService.class
 com/lihebin/blog/bean/User.class
 com/lihebin/blog/bean/OrderBy$OrderType.class
 com/lihebin/blog/bean/Article.class
+com/lihebin/blog/bean/PreNext.class
 com/lihebin/blog/bean/OrderBy.class
+com/lihebin/blog/service/FileService.class
 com/lihebin/blog/bean/Classify.class
 com/lihebin/blog/bean/Articles.class
 com/lihebin/blog/bean/DaoConstants.class

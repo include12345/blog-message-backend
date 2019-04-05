@@ -1,0 +1,63 @@
+23:01:59.331 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] web request>>[4fa3e0ac-bc75-4691-86ed-903e2b550f9a]
+23:01:59.336 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] request>>[4fa3e0ac-bc75-4691-86ed-903e2b550f9a]
+23:02:03.488 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] response>>com.lihebin.blog.bean.Article@3ff98a69
+23:02:03.488 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] web response>>com.lihebin.blog.bean.Article@3ff98a69
+23:10:43.340 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web request>>[com.lihebin.blog.bean.Articles@67d9329]
+23:10:43.341 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] request>>[com.lihebin.blog.bean.Articles@67d9329]
+23:10:47.820 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] response>>com.lihebin.blog.bean.Articles@54eef4a
+23:10:47.820 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web response>>com.lihebin.blog.bean.Articles@54eef4a
+23:11:09.060 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] web request>>[4fa3e0ac-bc75-4691-86ed-903e2b550f9a]
+23:11:09.061 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] request>>[4fa3e0ac-bc75-4691-86ed-903e2b550f9a]
+23:11:09.195 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] response>>com.lihebin.blog.bean.Article@6c6d5575
+23:11:09.197 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][getBlog] web response>>com.lihebin.blog.bean.Article@6c6d5575
+23:11:15.876 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web request>>[com.lihebin.blog.bean.Articles@31092641]
+23:11:15.878 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] request>>[com.lihebin.blog.bean.Articles@31092641]
+23:11:16.348 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] response>>com.lihebin.blog.bean.Articles@10881f21
+23:11:16.348 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web response>>com.lihebin.blog.bean.Articles@10881f21
+23:13:05.254 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web request>>[com.lihebin.blog.bean.Articles@4975b172]
+23:13:05.254 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] request>>[com.lihebin.blog.bean.Articles@4975b172]
+23:13:05.793 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] response>>com.lihebin.blog.bean.Articles@6600333d
+23:13:05.794 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web response>>com.lihebin.blog.bean.Articles@6600333d
+23:14:11.577 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web request>>[com.lihebin.blog.bean.Articles@29a0193d]
+23:14:11.577 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] request>>[com.lihebin.blog.bean.Articles@29a0193d]
+23:14:12.104 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] response>>com.lihebin.blog.bean.Articles@7aa9270a
+23:14:12.104 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web response>>com.lihebin.blog.bean.Articles@7aa9270a
+23:16:45.952 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web request>>[com.lihebin.blog.bean.Articles@71ceebd1]
+23:16:45.955 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] request>>[com.lihebin.blog.bean.Articles@71ceebd1]
+23:16:46.487 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] response>>com.lihebin.blog.bean.Articles@7775a2f6
+23:16:46.487 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web response>>com.lihebin.blog.bean.Articles@7775a2f6
+23:19:03.547 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web request>>[com.lihebin.blog.bean.Articles@adc413]
+23:19:03.549 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] request>>[com.lihebin.blog.bean.Articles@adc413]
+23:19:04.086 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] response>>com.lihebin.blog.bean.Articles@541c0c64
+23:19:04.087 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web response>>com.lihebin.blog.bean.Articles@541c0c64
+23:19:13.222 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@515f74c7]
+23:19:13.227 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@515f74c7]
+23:19:13.689 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@6dde015f
+23:19:13.689 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@6dde015f
+23:22:47.732 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@3adc59b1]
+23:22:47.736 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@3adc59b1]
+23:22:48.270 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@197a301
+23:22:48.270 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@197a301
+23:23:08.017 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web request>>[com.lihebin.blog.bean.Articles@51c8637c]
+23:23:08.018 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] request>>[com.lihebin.blog.bean.Articles@51c8637c]
+23:23:08.480 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] response>>com.lihebin.blog.bean.Articles@52d1ff31
+23:23:08.480 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web response>>com.lihebin.blog.bean.Articles@52d1ff31
+23:23:23.197 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web request>>[com.lihebin.blog.bean.Articles@257bda64]
+23:23:23.198 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] request>>[com.lihebin.blog.bean.Articles@257bda64]
+23:23:23.662 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] response>>com.lihebin.blog.bean.Articles@2406bcc
+23:23:23.663 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web response>>com.lihebin.blog.bean.Articles@2406bcc
+23:23:26.045 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] web request>>[4fa3e0ac-bc75-4691-86ed-903e2b550f9a]
+23:23:26.045 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] request>>[4fa3e0ac-bc75-4691-86ed-903e2b550f9a]
+23:23:26.180 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] response>>com.lihebin.blog.bean.Article@2e9c98ed
+23:23:26.180 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] web response>>com.lihebin.blog.bean.Article@2e9c98ed
+23:23:27.993 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@1bce6305]
+23:23:27.994 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@1bce6305]
+23:23:28.463 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@2f4d1701
+23:23:28.464 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@2f4d1701
+23:24:02.933 [Thread-17] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b8b43c7: startup date [Wed Apr 03 21:21:22 CST 2019]; root of context hierarchy
+23:24:02.940 [Thread-17] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+23:24:02.940 [Thread-17] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+23:24:02.944 [Thread-17] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+23:24:02.944 [Thread-17] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+23:24:02.948 [Thread-17] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+23:24:02.950 [Thread-17] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

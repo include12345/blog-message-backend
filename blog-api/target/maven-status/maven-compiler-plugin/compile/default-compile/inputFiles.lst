@@ -1,9 +1,11 @@
+/Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/service/FileService.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/annotation/BackendAnnotation.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/Classify.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/annotation/ServiceValidated.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/Article.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/service/UserService.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/Result.java
+/Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/PreNext.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/UserMenu.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/Request.java
 /Users/lihebin/github/blog-message-backend/blog-api/src/main/java/com/lihebin/blog/bean/Base.java

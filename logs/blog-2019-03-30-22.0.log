@@ -1,0 +1,382 @@
+22:00:37.877 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@2e1514ab]
+22:00:37.879 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@2e1514ab]
+22:00:38.293 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@5886d3a
+22:00:38.293 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@5886d3a
+22:08:38.819 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web request>>[com.lihebin.blog.bean.Articles@16645b3f]
+22:08:38.820 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] request>>[com.lihebin.blog.bean.Articles@16645b3f]
+22:08:43.206 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] response>>com.lihebin.blog.bean.Articles@42a1390a
+22:08:43.217 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web response>>com.lihebin.blog.bean.Articles@42a1390a
+22:09:15.153 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web request>>[com.lihebin.blog.bean.Articles@2772137d]
+22:09:15.153 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] request>>[com.lihebin.blog.bean.Articles@2772137d]
+22:09:15.517 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] response>>com.lihebin.blog.bean.Articles@64d77e67
+22:09:15.517 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web response>>com.lihebin.blog.bean.Articles@64d77e67
+22:09:31.665 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@54e64fa4]
+22:09:31.665 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@54e64fa4]
+22:09:32.020 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@18427d04
+22:09:32.020 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@18427d04
+22:09:39.377 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web request>>[com.lihebin.blog.bean.Articles@59a2d3ff]
+22:09:39.377 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] request>>[com.lihebin.blog.bean.Articles@59a2d3ff]
+22:09:39.445 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] response>>com.lihebin.blog.bean.Articles@16582c80
+22:09:39.445 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web response>>com.lihebin.blog.bean.Articles@16582c80
+22:09:42.024 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@775b14b6]
+22:09:42.025 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@775b14b6]
+22:09:42.092 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@5a053831
+22:09:42.093 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@5a053831
+22:09:42.977 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web request>>[com.lihebin.blog.bean.Articles@2f30d13e]
+22:09:42.986 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] request>>[com.lihebin.blog.bean.Articles@2f30d13e]
+22:09:43.054 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] response>>com.lihebin.blog.bean.Articles@6eb749a6
+22:09:43.055 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web response>>com.lihebin.blog.bean.Articles@6eb749a6
+22:09:43.825 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web request>>[com.lihebin.blog.bean.Articles@5643f31e]
+22:09:43.826 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] request>>[com.lihebin.blog.bean.Articles@5643f31e]
+22:09:43.893 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] response>>com.lihebin.blog.bean.Articles@6fb12a52
+22:09:43.894 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web response>>com.lihebin.blog.bean.Articles@6fb12a52
+22:09:47.642 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web request>>[com.lihebin.blog.bean.Articles@2c749780]
+22:09:47.642 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] request>>[com.lihebin.blog.bean.Articles@2c749780]
+22:09:47.996 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] response>>com.lihebin.blog.bean.Articles@23cf58af
+22:09:47.997 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web response>>com.lihebin.blog.bean.Articles@23cf58af
+22:18:07.091 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@167399e2]
+22:18:07.092 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@167399e2]
+22:18:11.453 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@1cb450bd
+22:18:11.453 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@1cb450bd
+22:19:05.919 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web request>>[com.lihebin.blog.bean.Articles@592a289f]
+22:19:05.919 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] request>>[com.lihebin.blog.bean.Articles@592a289f]
+22:19:06.279 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] response>>com.lihebin.blog.bean.Articles@4e50f80b
+22:19:06.279 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web response>>com.lihebin.blog.bean.Articles@4e50f80b
+22:19:09.261 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@75d47963]
+22:19:09.262 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@75d47963]
+22:19:09.327 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@586130c1
+22:19:09.327 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@586130c1
+22:19:11.141 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web request>>[com.lihebin.blog.bean.Articles@2623efb9]
+22:19:11.141 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] request>>[com.lihebin.blog.bean.Articles@2623efb9]
+22:19:11.205 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] response>>com.lihebin.blog.bean.Articles@11d44168
+22:19:11.206 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web response>>com.lihebin.blog.bean.Articles@11d44168
+22:19:15.028 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] web request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:15.028 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] web request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:15.029 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:15.029 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:15.127 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] response>>com.lihebin.blog.bean.PreNext@2010e357
+22:19:15.128 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] web response>>com.lihebin.blog.bean.PreNext@2010e357
+22:19:15.159 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] response>>com.lihebin.blog.bean.Article@4346220f
+22:19:15.160 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] web response>>com.lihebin.blog.bean.Article@4346220f
+22:19:18.145 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] web request>>[0e7cd19e-3b23-4e90-8ded-05c477bfcdea]
+22:19:18.145 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getPreNextBlog] web request>>[0e7cd19e-3b23-4e90-8ded-05c477bfcdea]
+22:19:18.146 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] request>>[0e7cd19e-3b23-4e90-8ded-05c477bfcdea]
+22:19:18.146 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getPreNextBlog] request>>[0e7cd19e-3b23-4e90-8ded-05c477bfcdea]
+22:19:18.220 [http-nio-8080-exec-5] ERROR com.lihebin.blog.dao.ArticleDao - getArticle: select * from article where ctime < (select ctime from article where id = :id) and deleted = 0 order by ctime desc limit 1, 0e7cd19e-3b23-4e90-8ded-05c477bfcdea, {}
+org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+	at org.springframework.dao.support.DataAccessUtils.requiredSingleResult(DataAccessUtils.java:71)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForObject(NamedParameterJdbcTemplate.java:212)
+	at com.lihebin.blog.dao.ArticleDao.getArticleHandle(ArticleDao.java:143)
+	at com.lihebin.blog.dao.ArticleDao.getNextArticle(ArticleDao.java:134)
+	at com.lihebin.blog.dao.ArticleDao$$FastClassBySpringCGLIB$$a6456bb6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.dao.ArticleDao$$EnhancerBySpringCGLIB$$d1dadbbd.getNextArticle(<generated>)
+	at com.lihebin.blog.service.BlogServiceImpl.getPreNextBlog(BlogServiceImpl.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:150)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.getPreNextBlog(Unknown Source)
+	at com.lihebin.blog.web.BlogController.getPreNextBlog(BlogController.java:31)
+	at com.lihebin.blog.web.BlogController$$FastClassBySpringCGLIB$$2c2394d6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.web.BlogController$$EnhancerBySpringCGLIB$$6d2dd483.getPreNextBlog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+22:19:18.221 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getPreNextBlog] response>>com.lihebin.blog.bean.PreNext@383cfe85
+22:19:18.221 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][getPreNextBlog] web response>>com.lihebin.blog.bean.PreNext@383cfe85
+22:19:18.275 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] response>>com.lihebin.blog.bean.Article@6fccd1de
+22:19:18.275 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][getBlog] web response>>com.lihebin.blog.bean.Article@6fccd1de
+22:19:20.681 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getPreNextBlog] web request>>[151c6656-3a58-4bba-8517-361e4f67ddc3]
+22:19:20.681 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][getBlog] web request>>[151c6656-3a58-4bba-8517-361e4f67ddc3]
+22:19:20.681 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getPreNextBlog] request>>[151c6656-3a58-4bba-8517-361e4f67ddc3]
+22:19:20.681 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][getBlog] request>>[151c6656-3a58-4bba-8517-361e4f67ddc3]
+22:19:20.714 [http-nio-8080-exec-7] ERROR com.lihebin.blog.dao.ArticleDao - getArticle: select * from article where ctime > (select ctime from article where id = :id) and deleted = 0 order by ctime desc limit 1, 151c6656-3a58-4bba-8517-361e4f67ddc3, {}
+org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0
+	at org.springframework.dao.support.DataAccessUtils.requiredSingleResult(DataAccessUtils.java:71)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForObject(NamedParameterJdbcTemplate.java:212)
+	at com.lihebin.blog.dao.ArticleDao.getArticleHandle(ArticleDao.java:143)
+	at com.lihebin.blog.dao.ArticleDao.getPreArticle(ArticleDao.java:123)
+	at com.lihebin.blog.dao.ArticleDao$$FastClassBySpringCGLIB$$a6456bb6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.dao.ArticleDao$$EnhancerBySpringCGLIB$$d1dadbbd.getPreArticle(<generated>)
+	at com.lihebin.blog.service.BlogServiceImpl.getPreNextBlog(BlogServiceImpl.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:150)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.getPreNextBlog(Unknown Source)
+	at com.lihebin.blog.web.BlogController.getPreNextBlog(BlogController.java:31)
+	at com.lihebin.blog.web.BlogController$$FastClassBySpringCGLIB$$2c2394d6.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lihebin.blog.web.BlogController$$EnhancerBySpringCGLIB$$6d2dd483.getPreNextBlog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+22:19:20.746 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getPreNextBlog] response>>com.lihebin.blog.bean.PreNext@7b5bff4d
+22:19:20.746 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][getPreNextBlog] web response>>com.lihebin.blog.bean.PreNext@7b5bff4d
+22:19:20.812 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][getBlog] response>>com.lihebin.blog.bean.Article@4e68ecc2
+22:19:20.812 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][getBlog] web response>>com.lihebin.blog.bean.Article@4e68ecc2
+22:19:26.552 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][getBlog] web request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:26.552 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getPreNextBlog] web request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:26.552 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getPreNextBlog] request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:26.552 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][getBlog] request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:19:26.617 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getPreNextBlog] response>>com.lihebin.blog.bean.PreNext@6bca653a
+22:19:26.618 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][getPreNextBlog] web response>>com.lihebin.blog.bean.PreNext@6bca653a
+22:19:26.681 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][getBlog] response>>com.lihebin.blog.bean.Article@6a02c93a
+22:19:26.682 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][getBlog] web response>>com.lihebin.blog.bean.Article@6a02c93a
+22:34:19.664 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] web request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:34:19.664 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] web request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:34:19.664 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:34:19.664 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] request>>[349ea4d9-dcea-438c-b4a1-0d2b0b063eb6]
+22:34:22.747 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] response>>com.lihebin.blog.bean.PreNext@155c4df9
+22:34:22.747 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][getPreNextBlog] web response>>com.lihebin.blog.bean.PreNext@155c4df9
+22:34:23.806 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] response>>com.lihebin.blog.bean.Article@210438c1
+22:34:23.806 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][getBlog] web response>>com.lihebin.blog.bean.Article@210438c1
+22:34:25.309 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web request>>[com.lihebin.blog.bean.Articles@1f6556e6]
+22:34:25.309 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] request>>[com.lihebin.blog.bean.Articles@1f6556e6]
+22:34:25.667 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] response>>com.lihebin.blog.bean.Articles@3f4fd902
+22:34:25.667 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web response>>com.lihebin.blog.bean.Articles@3f4fd902
+22:34:28.932 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@45547923]
+22:34:28.933 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@45547923]
+22:34:28.998 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@26bb23f8
+22:34:28.998 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@26bb23f8
+22:35:14.790 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web request>>[com.lihebin.blog.bean.Articles@221348e8]
+22:35:14.790 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] request>>[com.lihebin.blog.bean.Articles@221348e8]
+22:35:15.147 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] response>>com.lihebin.blog.bean.Articles@405591e6
+22:35:15.147 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web response>>com.lihebin.blog.bean.Articles@405591e6
+22:35:19.761 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@283cd47]
+22:35:19.761 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@283cd47]
+22:35:20.117 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@45d2209c
+22:35:20.117 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@45d2209c
+22:36:40.917 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web request>>[com.lihebin.blog.bean.Articles@9999294]
+22:36:40.917 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] request>>[com.lihebin.blog.bean.Articles@9999294]
+22:36:41.347 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] response>>com.lihebin.blog.bean.Articles@31291220
+22:36:41.347 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web response>>com.lihebin.blog.bean.Articles@31291220
+22:36:45.719 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web request>>[com.lihebin.blog.bean.Articles@463181c0]
+22:36:45.719 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] request>>[com.lihebin.blog.bean.Articles@463181c0]
+22:36:46.075 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] response>>com.lihebin.blog.bean.Articles@6124a596
+22:36:46.075 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web response>>com.lihebin.blog.bean.Articles@6124a596
+22:37:12.336 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@40c0cb6d]
+22:37:12.337 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@40c0cb6d]
+22:37:12.693 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@64997b0
+22:37:12.701 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@64997b0
+22:37:23.669 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web request>>[com.lihebin.blog.bean.Articles@118a4aff]
+22:37:23.669 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] request>>[com.lihebin.blog.bean.Articles@118a4aff]
+22:37:23.734 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] response>>com.lihebin.blog.bean.Articles@4ccaa458
+22:37:23.734 [http-nio-8080-exec-9] INFO  c.l.blog.config.ServiceLogAspect - [ID51][listBlog] web response>>com.lihebin.blog.bean.Articles@4ccaa458
+22:38:44.380 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web request>>[com.lihebin.blog.bean.Articles@28332acc]
+22:38:44.381 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] request>>[com.lihebin.blog.bean.Articles@28332acc]
+22:38:44.800 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] response>>com.lihebin.blog.bean.Articles@3d38f91f
+22:38:44.800 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web response>>com.lihebin.blog.bean.Articles@3d38f91f
+22:39:25.635 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web request>>[com.lihebin.blog.bean.Articles@75ce7dfb]
+22:39:25.635 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] request>>[com.lihebin.blog.bean.Articles@75ce7dfb]
+22:39:25.990 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] response>>com.lihebin.blog.bean.Articles@1c26833d
+22:39:25.991 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web response>>com.lihebin.blog.bean.Articles@1c26833d
+22:40:26.141 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web request>>[com.lihebin.blog.bean.Articles@182bd70d]
+22:40:26.141 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] request>>[com.lihebin.blog.bean.Articles@182bd70d]
+22:40:26.560 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] response>>com.lihebin.blog.bean.Articles@1a12b73e
+22:40:26.561 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web response>>com.lihebin.blog.bean.Articles@1a12b73e
+22:40:28.555 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@78707794]
+22:40:28.555 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@78707794]
+22:40:28.619 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@17af45a0
+22:40:28.619 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@17af45a0
+22:40:29.719 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] web request>>[com.lihebin.blog.bean.Articles@5cbd4e65]
+22:40:29.719 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] request>>[com.lihebin.blog.bean.Articles@5cbd4e65]
+22:40:29.783 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] response>>com.lihebin.blog.bean.Articles@432daea
+22:40:29.783 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] web response>>com.lihebin.blog.bean.Articles@432daea
+22:41:37.669 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web request>>[com.lihebin.blog.bean.Articles@4727cc6f]
+22:41:37.669 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] request>>[com.lihebin.blog.bean.Articles@4727cc6f]
+22:41:38.090 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] response>>com.lihebin.blog.bean.Articles@52dd2901
+22:41:38.091 [http-nio-8080-exec-1] INFO  c.l.blog.config.ServiceLogAspect - [ID43][listBlog] web response>>com.lihebin.blog.bean.Articles@52dd2901
+22:41:41.603 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web request>>[com.lihebin.blog.bean.Articles@261f12c7]
+22:41:41.603 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] request>>[com.lihebin.blog.bean.Articles@261f12c7]
+22:41:41.960 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] response>>com.lihebin.blog.bean.Articles@c3aba41
+22:41:41.960 [http-nio-8080-exec-2] INFO  c.l.blog.config.ServiceLogAspect - [ID44][listBlog] web response>>com.lihebin.blog.bean.Articles@c3aba41
+22:41:43.894 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web request>>[com.lihebin.blog.bean.Articles@72489d9c]
+22:41:43.894 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] request>>[com.lihebin.blog.bean.Articles@72489d9c]
+22:41:43.958 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] response>>com.lihebin.blog.bean.Articles@46f142f7
+22:41:43.959 [http-nio-8080-exec-4] INFO  c.l.blog.config.ServiceLogAspect - [ID46][listBlog] web response>>com.lihebin.blog.bean.Articles@46f142f7
+22:41:44.781 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web request>>[com.lihebin.blog.bean.Articles@47383044]
+22:41:44.782 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] request>>[com.lihebin.blog.bean.Articles@47383044]
+22:41:44.847 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] response>>com.lihebin.blog.bean.Articles@4a2178ca
+22:41:44.847 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web response>>com.lihebin.blog.bean.Articles@4a2178ca
+22:41:45.605 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web request>>[com.lihebin.blog.bean.Articles@5f0019d8]
+22:41:45.606 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] request>>[com.lihebin.blog.bean.Articles@5f0019d8]
+22:41:45.672 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] response>>com.lihebin.blog.bean.Articles@60464eb4
+22:41:45.672 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web response>>com.lihebin.blog.bean.Articles@60464eb4
+22:41:46.041 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@6c985c16]
+22:41:46.041 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@6c985c16]
+22:41:46.107 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@3274889d
+22:41:46.108 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@3274889d
+22:43:59.164 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@42a78e50]
+22:43:59.165 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@42a78e50]
+22:43:59.583 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@45077e69
+22:43:59.584 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@45077e69
+22:52:48.175 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web request>>[com.lihebin.blog.bean.Articles@5d5fc911]
+22:52:48.175 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] request>>[com.lihebin.blog.bean.Articles@5d5fc911]
+22:52:52.518 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] response>>com.lihebin.blog.bean.Articles@932c09d
+22:52:52.518 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web response>>com.lihebin.blog.bean.Articles@932c09d
+22:52:58.665 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web request>>[com.lihebin.blog.bean.Articles@4c9dcbda]
+22:52:58.666 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] request>>[com.lihebin.blog.bean.Articles@4c9dcbda]
+22:52:58.726 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] response>>com.lihebin.blog.bean.Articles@52af607b
+22:52:58.726 [http-nio-8080-exec-5] INFO  c.l.blog.config.ServiceLogAspect - [ID47][listBlog] web response>>com.lihebin.blog.bean.Articles@52af607b
+22:52:59.910 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web request>>[com.lihebin.blog.bean.Articles@3fd755bd]
+22:52:59.911 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] request>>[com.lihebin.blog.bean.Articles@3fd755bd]
+22:52:59.970 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] response>>com.lihebin.blog.bean.Articles@cd43c03
+22:52:59.971 [http-nio-8080-exec-6] INFO  c.l.blog.config.ServiceLogAspect - [ID48][listBlog] web response>>com.lihebin.blog.bean.Articles@cd43c03
+22:53:01.252 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web request>>[com.lihebin.blog.bean.Articles@1c221a29]
+22:53:01.252 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] request>>[com.lihebin.blog.bean.Articles@1c221a29]
+22:53:01.312 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] response>>com.lihebin.blog.bean.Articles@3dd96be9
+22:53:01.313 [http-nio-8080-exec-7] INFO  c.l.blog.config.ServiceLogAspect - [ID49][listBlog] web response>>com.lihebin.blog.bean.Articles@3dd96be9
+22:53:03.279 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] web request>>[com.lihebin.blog.bean.Articles@32ca726f]
+22:53:03.279 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] request>>[com.lihebin.blog.bean.Articles@32ca726f]
+22:53:03.619 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] response>>com.lihebin.blog.bean.Articles@1fe30a55
+22:53:03.620 [http-nio-8080-exec-8] INFO  c.l.blog.config.ServiceLogAspect - [ID50][listBlog] web response>>com.lihebin.blog.bean.Articles@1fe30a55
+22:53:33.008 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web request>>[com.lihebin.blog.bean.Articles@73a7215e]
+22:53:33.009 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] request>>[com.lihebin.blog.bean.Articles@73a7215e]
+22:53:33.345 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] response>>com.lihebin.blog.bean.Articles@19e9886b
+22:53:33.345 [http-nio-8080-exec-10] INFO  c.l.blog.config.ServiceLogAspect - [ID52][listBlog] web response>>com.lihebin.blog.bean.Articles@19e9886b
+22:58:15.479 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web request>>[com.lihebin.blog.bean.Articles@2786c895]
+22:58:15.480 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] request>>[com.lihebin.blog.bean.Articles@2786c895]
+22:58:19.832 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] response>>com.lihebin.blog.bean.Articles@4c3e5e07
+22:58:19.832 [http-nio-8080-exec-3] INFO  c.l.blog.config.ServiceLogAspect - [ID45][listBlog] web response>>com.lihebin.blog.bean.Articles@4c3e5e07
