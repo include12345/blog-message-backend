@@ -1,5 +1,7 @@
 package com.lihebin.blog.bean;
 
+import java.util.Map;
+
 /**
  * Created by lihebin on 2018/12/2.
  */
@@ -12,9 +14,20 @@ public class Result {
     public static final int ERROR_CODE = 500;
 
 
+
     private Integer code;
 
     private String message;
+
+    private Map data;
+
+    public Map getData() {
+        return data;
+    }
+
+    public void setData(Map data) {
+        this.data = data;
+    }
 
     public Integer getCode() {
         return code;

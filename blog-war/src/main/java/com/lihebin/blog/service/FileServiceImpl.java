@@ -40,14 +40,22 @@ public class FileServiceImpl implements FileService{
     private static final String CODE_OK = "OK";
     private static final String DATA = "data";
     private static final String DATA_UUID = "uuid";
+    private static final String DATA_NAME = "name";
+
 
     private static final String EMAIL = "email";
     private static final String PASSWORD = "password";
+    private static final String PRIVACY = "privacy";
+    private static final String SIZE = "size";
+    private static final String DIR = "dir";
+    private static final String FILENAME = "filename";
 
     private static final String UPLOAD_USER_UUID = "userUuid";
     private static final String UPLOAD_ALIEN = "alien";
     private static final String UPLOAD_PUUID = "puuid";
     private static final String UPLOAD_FILE = "file";
+
+    private static final String DIR_DEFAULT = "/admin";
 
     private static final Boolean UPLOAD_ALIEN_DEFAULT = false;
     private static final String UPLOAD_PUUID_DEFAULT = "root";
@@ -67,15 +75,16 @@ public class FileServiceImpl implements FileService{
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         HttpEntity<MultiValueMap<String, String>> formEntity = new HttpEntity<>(map, headers);
-        Map loginResult = restTemplate.postForObject(String.format("%s/api/user/login", pictureUrl), formEntity, Map.class);
-        String code = MapUtils.getString(loginResult, CODE);
+        ResponseEntity<Map> loginResult = restTemplate.postForEntity(String.format("%s/api/user/login", pictureUrl), formEntity, Map.class);
+        String cookie = loginResult.getHeaders().getFirst(HttpHeaders.SET_COOKIE);
+        String code = MapUtils.getString(loginResult.getBody(), CODE);
         if (!CODE_OK.equalsIgnoreCase(code)) {
             log.error("uploadPicture: {},{}", "登录失败", loginResult);
             result.setCode(Result.FAIL_CODE);
             result.setMessage("上传文件失败");
             return result;
         }
-        String uuid = MapUtils.getString(MapUtils.getMap(loginResult, DATA), DATA_UUID);
+        String uuid = MapUtils.getString(MapUtils.getMap(loginResult.getBody(), DATA), DATA_UUID);
         File tempFile = multipartFileToFile(file);
         if (null == tempFile) {
             log.error("uploadPicture: {},{}", "转换文件失败", file.getName());
@@ -91,9 +100,48 @@ public class FileServiceImpl implements FileService{
         param.add(UPLOAD_ALIEN, UPLOAD_ALIEN_DEFAULT);
         HttpHeaders headersUpload = new HttpHeaders();
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+        headersUpload.add(HttpHeaders.COOKIE, cookie);
         HttpEntity<MultiValueMap<String, Object>> uploadEntity = new HttpEntity<>(param, headersUpload);
         Map uploadResult = restTemplate.postForObject(String.format("%s/api/matter/upload", pictureUrl), uploadEntity, Map.class);
-        return null;
+        code = MapUtils.getString(uploadResult, CODE);
+        if (!CODE_OK.equalsIgnoreCase(code)) {
+            log.error("uploadPicture: {},{}", "上传文件失败", uploadResult);
+            result.setCode(Result.FAIL_CODE);
+            result.setMessage("上传文件失败");
+            return result;
+        }
+        uuid = MapUtils.getString(MapUtils.getMap(uploadResult, DATA), DATA_UUID);
+        String name = MapUtils.getString(MapUtils.getMap(uploadResult, DATA), DATA_NAME);
+        result.setCode(Result.SUCCESS_CODE);
+        result.setMessage(String.format("%s/api/alien/download/%s/%s", pictureUrl, uuid, name));
+        return result;
+    }
+
+    @Override
+    public Result uploadPictureToken(String filename, String size) {
+        Result result = new Result();
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
+        map.add(EMAIL, loginEmail);
+        map.add(PASSWORD, loginPassword);
+        map.add(FILENAME, filename);
+        map.add(PRIVACY, "false");
+        map.add(SIZE, size);
+        map.add(DIR, DIR_DEFAULT);
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+        HttpEntity<MultiValueMap<String, String>> formEntity = new HttpEntity<>(map, headers);
+        Map tokenResult = restTemplate.postForObject(String.format("%s/api/alien/fetch/upload/token", pictureUrl), formEntity, Map.class);
+        String code = MapUtils.getString(tokenResult, CODE);
+        if (!CODE_OK.equalsIgnoreCase(code)) {
+            log.error("uploadPictureToken: {},{}", "获取token失败", tokenResult);
+            result.setCode(Result.FAIL_CODE);
+            result.setMessage("获取token失败");
+            return result;
+        }
+        String uuid = MapUtils.getString(MapUtils.getMap(tokenResult, DATA), DATA_UUID);
+        result.setCode(Result.SUCCESS_CODE);
+        result.setMessage(uuid);
+        return result;
     }
 
 

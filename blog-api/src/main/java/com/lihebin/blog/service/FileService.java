@@ -19,4 +19,12 @@ public interface FileService {
      * @return
      */
     Result uploadPicture(MultipartFile file);
+
+    /**
+     * 获取上传文件所需的token
+     * @param filename
+     * @param size
+     * @return
+     */
+    Result uploadPictureToken(String filename, String size);
 }

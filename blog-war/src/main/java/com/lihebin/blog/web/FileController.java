@@ -19,9 +19,15 @@ public class FileController {
     @Autowired
     private FileService fileService;
 
-    @RequestMapping(value = "/api/uploadPicture", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/file/uploadPicture", method = RequestMethod.POST)
     @ResponseBody
     public Result uploadPicture(@RequestParam("file") MultipartFile file) {
         return fileService.uploadPicture(file);
+    }
+
+    @RequestMapping(value = "/file/uploadPictureToken",  method = RequestMethod.GET)
+    @ResponseBody
+    public Result uploadPictureToken(@RequestParam(value = "filename", required = true) String filename, @RequestParam(value = "size", required = true) String size) {
+        return fileService.uploadPictureToken(filename, size);
     }
 }
