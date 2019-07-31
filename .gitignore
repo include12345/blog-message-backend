@@ -1,0 +1,6 @@
+logs/
+log/
+.idea/
+target/
+*.xlsx
+*.iml
