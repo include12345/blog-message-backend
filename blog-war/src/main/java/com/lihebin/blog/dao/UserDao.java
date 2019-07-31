@@ -23,8 +23,8 @@ public class UserDao {
 
     private final static Logger log = LoggerFactory.getLogger(UserDao.class);
 
-    @Resource(name = "backendJdbcTemplate")
-    JdbcTemplate backendUserTemplate;
+    @Resource(name = "blogJdbcTemplate")
+    JdbcTemplate blogTemplate;
 
     /**
      * 根据用户名查用户信息
@@ -36,7 +36,7 @@ public class UserDao {
         try {
             String sql = "select * from user where username= ? and deleted = 0";
             RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
-            return backendUserTemplate.queryForObject(sql, new String[]{username}, rowMapper);
+            return blogTemplate.queryForObject(sql, new String[]{username}, rowMapper);
         } catch (Exception e) {
             log.error("queryUserByUsername:{}", username, e);
             return new User();
@@ -52,7 +52,7 @@ public class UserDao {
         try {
             String sql = "select * from user where name= ? and deleted = 0";
             RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
-            return backendUserTemplate.queryForObject(sql, new String[]{name}, rowMapper);
+            return blogTemplate.queryForObject(sql, new String[]{name}, rowMapper);
         } catch (Exception e) {
             return new User();
         }
@@ -67,7 +67,7 @@ public class UserDao {
     public List<UserMenu> listUserMenu(String username) {
         try {
             String sql = "select * from user_menu where username= ?";
-            return backendUserTemplate.query(sql, new String[]{username}, new BeanPropertyRowMapper(UserMenu.class));
+            return blogTemplate.query(sql, new String[]{username}, new BeanPropertyRowMapper(UserMenu.class));
         } catch (Exception e) {
             return new ArrayList<>();
         }
@@ -85,7 +85,7 @@ public class UserDao {
     public boolean insertUsername(String username, String name, String password, int role) {
         try {
             String sql = "INSERT INTO user(username,password,role,name) VALUES(?,?,?,?)";
-            backendUserTemplate.update(sql, username, password, role, name);
+            blogTemplate.update(sql, username, password, role, name);
             return true;
         } catch (Exception e) {
             log.error("insertUsername:{},{},{},{}", username, name, password, role, e);
@@ -102,7 +102,7 @@ public class UserDao {
     public boolean deleteUsername(String username) {
         try {
             String sql = "update user set deleted = 1 where username= ? ";
-            backendUserTemplate.update(sql, username);
+            blogTemplate.update(sql, username);
             return true;
         } catch (Exception e) {
             return false;
@@ -119,7 +119,7 @@ public class UserDao {
     public boolean queryUserMenuByUserAndSn(String username, int menu) {
         try {
             String sql = "SELECT username,menu_sn FROM user_menu WHERE username=? AND menu_sn=?";
-            Map<String, Object> result = backendUserTemplate.queryForMap(sql, username, menu);
+            Map<String, Object> result = blogTemplate.queryForMap(sql, username, menu);
             return !MapUtils.isEmpty(result);
         } catch (Exception e) {
             return false;
@@ -136,7 +136,7 @@ public class UserDao {
     public boolean insertUserMenuByUserAndSn(String username, int menu) {
         try {
             String sql = "INSERT INTO user_menu(id,username,menu_sn) VALUES(uuid(),?,?)";
-            backendUserTemplate.update(sql, username, menu);
+            blogTemplate.update(sql, username, menu);
             return true;
         } catch (Exception e) {
             return false;
@@ -159,7 +159,7 @@ public class UserDao {
             dataList.add(data);
         }
         try {
-            backendUserTemplate.batchUpdate(sql, dataList);
+            blogTemplate.batchUpdate(sql, dataList);
             return true;
         } catch (Exception e) {
             return false;
@@ -178,11 +178,11 @@ public class UserDao {
         try {
             String sql = "DELETE FROM user_menu WHERE username=?";
             if (menu == -1){
-                backendUserTemplate.update(sql, username);
+                blogTemplate.update(sql, username);
                 return true;
             }
             sql = sql + " AND menu_sn=?";
-            backendUserTemplate.update(sql, username, menu);
+            blogTemplate.update(sql, username, menu);
             return true;
         } catch (Exception e) {
             return false;
@@ -199,7 +199,7 @@ public class UserDao {
     public boolean updatePasswordByUsername(String cellphone, String password) {
         try {
             String sql = "update user set password=? where username=?";
-            backendUserTemplate.update(sql, password, cellphone);
+            blogTemplate.update(sql, password, cellphone);
             return true;
         } catch (Exception e) {
             return false;
@@ -213,7 +213,7 @@ public class UserDao {
     public List<User> queryAllUsername() {
         try {
             String sql = "select * from user where deleted = 0";
-            return backendUserTemplate.query(sql, new BeanPropertyRowMapper(User.class));
+            return blogTemplate.query(sql, new BeanPropertyRowMapper(User.class));
         } catch (Exception e) {
             return new ArrayList<>();
         }
@@ -229,7 +229,7 @@ public class UserDao {
     public boolean queryUserAndMenu(String username, String menu) {
         try {
             String sql = "select name from user_menu where username = ? and name=? limit 1";
-            Map<String, Object> menuParam = backendUserTemplate.queryForMap(sql, username, menu);
+            Map<String, Object> menuParam = blogTemplate.queryForMap(sql, username, menu);
             return !MapUtils.isEmpty(menuParam);
         } catch (Exception e) {
             return false;
@@ -244,7 +244,7 @@ public class UserDao {
     public List queryMenuByType(String type) {
         try {
             String sql = "select * from menu where type=? and deleted = 0";
-            return backendUserTemplate.queryForList(sql, type);
+            return blogTemplate.queryForList(sql, type);
         } catch (Exception e){
             return new ArrayList();
         }

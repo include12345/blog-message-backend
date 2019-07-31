@@ -16,21 +16,21 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class DataSourceConfig {
-
-    @Bean(name= "backendDataSource")
-    @Primary
-    @ConfigurationProperties(prefix = "spring.datasource.backend")
-    public DataSource backendDataSource() {
-        return DataSourceBuilder.create().type(DruidDataSource.class).build();
-    }
-
-
-    @Bean(name = "backendJdbcTemplate")
-    public JdbcTemplate backendJdbcTemplate(@Qualifier("backendDataSource") DataSource dataSource) {
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-        jdbcTemplate.setQueryTimeout(3);
-        return jdbcTemplate;
-    }
+//
+//    @Bean(name= "backendDataSource")
+//    @Primary
+//    @ConfigurationProperties(prefix = "spring.datasource.backend")
+//    public DataSource backendDataSource() {
+//        return DataSourceBuilder.create().type(DruidDataSource.class).build();
+//    }
+//
+//
+//    @Bean(name = "backendJdbcTemplate")
+//    public JdbcTemplate backendJdbcTemplate(@Qualifier("backendDataSource") DataSource dataSource) {
+//        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+//        jdbcTemplate.setQueryTimeout(3);
+//        return jdbcTemplate;
+//    }
 
 
     @Bean(name= "blogDataSource")

@@ -30,8 +30,8 @@ public class FileServiceImpl implements FileService{
     private String pictureUrl;
 
 
-    @Value("${url.login.email}")
-    private String loginEmail;
+    @Value("${url.login.username}")
+    private String loginUsername;
 
     @Value("${url.login.password}")
     private String loginPassword;
@@ -43,8 +43,9 @@ public class FileServiceImpl implements FileService{
     private static final String DATA_NAME = "name";
 
 
-    private static final String EMAIL = "email";
+    private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
+    private static final String EXPIRE_TIME = "expireTime";
     private static final String PRIVACY = "privacy";
     private static final String SIZE = "size";
     private static final String DIR = "dir";
@@ -70,7 +71,7 @@ public class FileServiceImpl implements FileService{
     public Result uploadPicture(MultipartFile file) {
         Result result = new Result();
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
-        map.add(EMAIL, loginEmail);
+        map.add(USERNAME, loginUsername);
         map.add(PASSWORD, loginPassword);
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -121,8 +122,8 @@ public class FileServiceImpl implements FileService{
     public Result uploadPictureToken(String filename, String size) {
         Result result = new Result();
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
-        map.add(EMAIL, loginEmail);
-        map.add(PASSWORD, loginPassword);
+        map.add(USERNAME, loginUsername);
+        map.add(EXPIRE_TIME, loginPassword);
         map.add(FILENAME, filename);
         map.add(PRIVACY, "false");
         map.add(SIZE, size);
@@ -165,12 +166,12 @@ public class FileServiceImpl implements FileService{
     public static void main(String[] args) {
         RestTemplate test = new RestTemplate();
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
-        map.add("email", "include_lihebin@163.com");
-        map.add("password", "include155121214");
+        map.add("username", "root");
+        map.add("password", "include");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         HttpEntity<MultiValueMap<String, String>> formEntity = new HttpEntity<>(map, headers);
-        ResponseEntity<Map> loginResult = test.postForEntity("http://47.95.208.59:6010/api/user/login", formEntity, Map.class);
+        ResponseEntity<Map> loginResult = test.postForEntity("http://129.28.192.214:6010/api/user/login", formEntity, Map.class);
         String cookie = loginResult.getHeaders().getFirst(HttpHeaders.SET_COOKIE);
         String code = MapUtils.getString(loginResult.getBody(), CODE);
         if (!CODE_OK.equalsIgnoreCase(code)) {
@@ -188,7 +189,7 @@ public class FileServiceImpl implements FileService{
         headersUpload.add(HttpHeaders.COOKIE, cookie);
 //        headersUpload.setCacheControl("no-cache");
         HttpEntity<MultiValueMap<String, Object>> uploadEntity = new HttpEntity<>(param, headersUpload);
-        Map upload = test.postForObject("http://47.95.208.59:6010/api/matter/upload", uploadEntity, Map.class);
+        Map upload = test.postForObject("http://129.28.192.214:6010/api/matter/upload", uploadEntity, Map.class);
 
         System.out.println(upload);
     }

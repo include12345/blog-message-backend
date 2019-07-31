@@ -74,11 +74,11 @@
             <version>0.22.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.confluent</groupId>
-            <artifactId>kafka-avro-serializer</artifactId>
-            <version>4.0.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>io.confluent</groupId>-->
+            <!--<artifactId>kafka-avro-serializer</artifactId>-->
+            <!--<version>4.0.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>commons-collections</groupId>
