@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
         String con = username.concat(SALT).concat(uuid);
         String sign = MD5Util.getSign(con);
         cacheDao.removeValue(sign);
-        cacheDao.cacheValue(sign, username, 60, TimeUnit.MINUTES);
+        cacheDao.cacheValue(sign, username, 6, TimeUnit.HOURS);
         return StringUtil.hashMap(Result.CODE, Result.SUCCESS_CODE, User.NAME, user.getName(), User.USERNAME, username, User.TOKEN, sign);
     }
 

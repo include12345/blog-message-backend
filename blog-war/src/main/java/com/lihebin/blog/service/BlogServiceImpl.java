@@ -99,7 +99,10 @@ public class BlogServiceImpl implements BlogService{
         Article articleOut = new Article();
         articleOut.setId(article.getId());
         articleOut.setTitle(article.getTitle());
-        articleOut.setClassifyName(classifyDao.getClassifyBySn(article.getClassify()));
+        String classifyName = classifyDao.getClassifyBySn(article.getClassify());
+        if (classifyName != null) {
+            articleOut.setClassifyName(classifyName);
+        }
         articleOut.setContent(article.getContent());
         articleOut.setCreateAuthor(userDao.queryUserByUsername(article.getCreate_author_id()).getName());
         articleOut.setUpdateAuthor(userDao.queryUserByUsername(article.getUpdate_author_id()).getName());
